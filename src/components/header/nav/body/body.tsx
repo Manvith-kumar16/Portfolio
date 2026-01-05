@@ -54,37 +54,46 @@ export default function Body({
   };
 
   return (
-    <div className={cn(styles.body, "flex flex-col items-end md:flex-row")}>
-      {links.map((link, index) => {
-        const { title, href, target } = link;
+  <div
+    className={cn(
+      styles.body,
+      // 🔹 FIX: left aligned vertical menu
+      "flex flex-col items-start"
+    )}
+  >
+    {links.map((link, index) => {
+      const { title, href, target } = link;
 
-        return (
-          <Link
-            key={`l_${index}`}
-            href={href}
-            target={target}
-            className="cursor-can-hover rounded-lg"
+      return (
+        <Link
+          key={`l_${index}`}
+          href={href}
+          target={target}
+          className="w-full"
+        >
+          <motion.p
+            className={cn(
+              "w-full text-left",
+              "transition-colors duration-300",
+              currentHref === href
+                ? "text-white underline underline-offset-4"
+                : "text-white/60 hover:text-white"
+            )}
+            onClick={() => setIsActive(false)}
+            onMouseOver={() => setSelectedLink({ isActive: true, index })}
+            onMouseLeave={() => setSelectedLink({ isActive: false, index })}
+            variants={blur}
+            animate={
+              selectedLink.isActive && selectedLink.index !== index
+                ? "open"
+                : "closed"
+            }
           >
-            <motion.p
-              className={cn(
-                "rounded-lg",
-                currentHref !== href ? "text-muted-foreground" : "underline"
-              )}
-              onClick={() => setIsActive(false)}
-              onMouseOver={() => setSelectedLink({ isActive: true, index })}
-              onMouseLeave={() => setSelectedLink({ isActive: false, index })}
-              variants={blur}
-              animate={
-                selectedLink.isActive && selectedLink.index !== index
-                  ? "open"
-                  : "closed"
-              }
-            >
-              {getChars(title)}
-            </motion.p>
-          </Link>
-        );
-      })}
-    </div>
-  );
+            {getChars(title)}
+          </motion.p>
+        </Link>
+      );
+    })}
+  </div>
+);
 }

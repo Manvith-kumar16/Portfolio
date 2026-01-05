@@ -38,12 +38,11 @@ const config = {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/_Abhi_Speaks/",
-    linkedin: "https://www.linkedin.com/in/manvith-kumar16/",
-    instagram: "https://www.linkedin.com/in/manvith-kumar16/",
-    facebook: "https://www.facebook.com/profile.php?id=100010029821759",
-    github: "https://github.com/manvith-kumar16/",
-  },
+  linkedin: "https://www.linkedin.com/in/manvith-kumar16/",
+  instagram: "https://www.linkedin.com/in/manvith-kumar16/",
+  github: "https://github.com/manvith-kumar16/",
+},
+
 };
 export { config };
 

@@ -19,12 +19,12 @@ const links: Link[] = [
   {
     title: "Education",
     href: "/#education",
-    thumbnail: "/assets/nav-link-previews/skills.png", // reuse for now
+    thumbnail: "/assets/nav-link-previews/education.png",
   },
   {
     title: "Certificates",
     href: "/#certificates",
-    thumbnail: "/assets/nav-link-previews/projects.png", // reuse for now
+    thumbnail: "/assets/nav-link-previews/certificates.png", 
   },
   {
     title: "Projects",
@@ -34,7 +34,7 @@ const links: Link[] = [
   {
     title: "Achievements",
     href: "/#achievements",
-    thumbnail: "/assets/nav-link-previews/about.png", // reuse for now
+    thumbnail: "/assets/nav-link-previews/achievements.png", 
   },
   {
     title: "Contact",

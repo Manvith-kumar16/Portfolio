@@ -10,19 +10,20 @@ const SkillsSection = () => {
         <Link href={"#skills"}>
           <BoxReveal width="100%">
             <h2
-              className={cn(
-                "bg-clip-text text-4xl text-center text-transparent md:text-7xl",
-                "bg-gradient-to-b from-black/80 to-black/50",
-                "dark:bg-gradient-to-b dark:from-white/80 dark:to-white/20 dark:bg-opacity-50 "
-              )}
-            >
+              className="
+    relative z-20
+    pointer-events-none
+    text-4xl md:text-6xl font-bold text-center
+    bg-clip-text text-transparent
+    bg-gradient-to-b from-white via-slate-200 to-slate-400
+    mb-10 md:mb-12
+  "
+>
               SKILLS
             </h2>
           </BoxReveal>
         </Link>
-        <p className="mx-auto mt-4 line-clamp-4 max-w-3xl font-normal text-base text-center text-neutral-300">
-          (hint: press a key)
-        </p>
+      
       </div>
     </section>
   );

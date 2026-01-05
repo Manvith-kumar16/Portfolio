@@ -18,8 +18,10 @@ function MainPage() {
     <SmoothScroll>
       <main className={cn("bg-slate-100 dark:bg-transparent")}>
         <div className="top-0 z-0 fixed w-full h-screen">
-          <AnimatedBackground />
-        </div>
+  <AnimatedBackground />
+</div>
+
+
 
         <HeroSection />
         <SkillsSection />

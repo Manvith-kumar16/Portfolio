@@ -86,7 +86,7 @@ const ContactForm = () => {
         <Label htmlFor="message">Your Message</Label>
         <Textarea
           id="message"
-          placeholder="Tell me about your project..."
+          placeholder="Write your message here…"
           required
           value={message}
           onChange={(e) => setMessage(e.target.value)}

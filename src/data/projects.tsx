@@ -839,7 +839,7 @@ const projects: Project[] = [
   // 02. Tulu Lipi AI Learning Platform
   id: "financeme",
   category: "AI & Cultural Preservation",
-  title: "TULU KALPUGA - AI-Powered Interactive Platform for Learning Tulu Lipi",
+  title: "TULU KALPUGA - AI-Powered Platform for Learning Tulu Lipi",
   src: "/assets/projects-screenshots/tulu-lipi/1.png",
   screenshots: [
     "/assets/projects-screenshots/tulu-lipi/1.png",
