@@ -1,6 +1,3 @@
-This is a polished and professional version of your `README.md`. I have fixed the formatting errors (especially the broken code blocks and environment variable sections), added dynamic GitHub badges, and organized the layout for better readability.
-
----
 # 🚀 Manvith Kumar Ullal – Portfolio Website
 
 ![Portfolio Preview](./public/assets/nav-link-previews/about.png)
