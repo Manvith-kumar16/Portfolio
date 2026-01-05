@@ -93,25 +93,22 @@ src/
 ├── hooks/
 └── lib/
 
-yaml
-Copy code
-
----
-
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/your-username/portfolio.git
+
 2. Install dependencies
 bash
-Copy code
+
 npm install
 3. Environment Variables
 Create a .env.local file in the root directory:
 
 env
-Copy code
+
 RESEND_API_KEY=your_resend_api_key_here
 4. Run the development server
 bash
@@ -128,7 +125,7 @@ Open Vercel Dashboard
 
 Go to your project → Settings
 
-Add environment variable:
+Add a new environment variable:
 
 Name: RESEND_API_KEY
 
@@ -163,10 +160,11 @@ Copy code
 
 ---
 
-If you want next:
-- 🔥 GitHub badges
-- 🎥 Preview GIF / video embed
-- 🌐 Auto-generated OG images
-- 🧾 Resume PDF section in README
+If you want next, I can add:
+- ✅ GitHub badges (stars, forks, tech stack)
+- 🎥 Embedded preview GIF / video
+- 🌐 SEO + OG image section
+- 📄 Resume PDF download section
+- 🧠 “How the 3D keyboard works” explanation
 
-Just say the word 🚀
+Just tell me 🚀
