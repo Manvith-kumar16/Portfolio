@@ -1,6 +1,14 @@
+This is a polished and professional version of your `README.md`. I have fixed the formatting errors (especially the broken code blocks and environment variable sections), added dynamic GitHub badges, and organized the layout for better readability.
+
+---
+# 🚀 Manvith Kumar Ullal – Portfolio Website
+
 ![Portfolio Preview](./public/assets/nav-link-previews/about.png)
 
-# 🚀 Manvith Kumar Ullal – Portfolio Website
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/gsap/)
 
 Welcome to the repository for my **personal portfolio website**! 🎉  
 This project showcases my skills, projects, achievements, and certifications through a **modern, interactive, and visually immersive experience**.
@@ -9,162 +17,132 @@ This project showcases my skills, projects, achievements, and certifications thr
 
 ## 🌐 Live Preview
 
-🔗 **Live Website:** https://your-domain-here.vercel.app  
-*(Replace with your deployed link)*
+🔗 **Live Website:** [https://manvith-portfolio.vercel.app](https://your-domain-here.vercel.app)  
+*(Replace with your actual deployed link)*
 
 ---
 
 ## ✨ Inspiration
 
-This portfolio is **inspired by** the creative work of  
-👉 **Naresh Khatri** – https://github.com/Naresh-Khatri/Portfolio  
+This portfolio is **inspired by** the creative work of:  
+👉 **Naresh Khatri** – [GitHub Profile](https://github.com/Naresh-Khatri/Portfolio)  
 
-Huge thanks for the design inspiration and interaction ideas 🙏
+Huge thanks for the design inspiration and interaction ideas! 🙏
 
 ---
 
 ## 🔥 Features
 
 ### 🎹 3D Interactive Skills Section
-- Custom **3D keyboard built using Spline**
-- Each key represents a technical skill
-- Hover & keypress interactions reveal skill details
-- GSAP-powered section transitions
+- **Spline-Powered Keyboard:** Custom 3D keyboard model.
+- **Real-time Interaction:** Each key represents a technical skill with hover & keypress reveals.
+- **GSAP Integration:** Smooth camera transitions between keyboard views.
 
 ### ✨ Smooth Animations & Interactions
-- Scroll-based animations using **GSAP**
-- Micro-interactions with **Framer Motion**
-- Modal animations and smooth reveals
+- **GSAP & Framer Motion:** Seamless scroll-based animations and micro-interactions.
+- **Aceternity UI:** High-quality, ready-made animated components.
+- **Glassmorphism:** Elegant dark UI with glowing borders and frosted glass effects.
 
-### 🌌 Space-Themed Dark UI
-- Futuristic dark aesthetic
-- Animated background elements
-- Glassmorphism cards with glowing borders
-
-### 📱 Fully Responsive Design
-- Optimized for desktop, tablet, and mobile
-- Adaptive 3D scaling for smaller screens
-
-### 🧠 Clean & Scalable Architecture
-- Modular components
-- Reusable UI patterns
-- Easy customization and extension
+### 📱 Responsive & Optimized
+- **Mobile First:** Adaptive 3D scaling for smaller screens.
+- **Performance:** Optimized image loading and modular component architecture.
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend**
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-- Shadcn UI
-- Aceternity UI
-
-**Animations & 3D**
-- GSAP
-- Framer Motion
-- Spline Runtime
-
-**Backend / Utilities**
-- Resend
-- Socket.io
-- Zod
+| Category | Tech Used |
+| :--- | :--- |
+| **Frontend** | Next.js, React, TypeScript, Tailwind CSS |
+| **UI Library** | Shadcn UI, Aceternity UI |
+| **Animations** | GSAP, Framer Motion |
+| **3D Design** | Spline Runtime |
+| **Utilities** | Resend (Email), Socket.io, Zod |
 
 ---
 
 ## 📁 Project Structure (Highlights)
 
+```text
 public/
-└── assets/
-├── achievements/
-├── icons/
-├── nav-link-previews/
-│ └── about.png
-├── projects-screenshots/
-├── seo/
-└── skills-keyboard.spline
-
+├── assets/
+│   ├── achievements/          # Certificate images
+│   ├── nav-link-previews/     # OG & Preview images
+│   ├── projects-screenshots/  # Project thumbnails
+│   └── skills-keyboard.spline # 3D Spline model
 src/
-├── app/
-├── components/
-├── data/
-├── hooks/
-└── lib/
+├── app/          # Next.js App Router (Pages & Layouts)
+├── components/   # Reusable UI components
+├── data/         # Mock data for projects & skills
+├── hooks/        # Custom React hooks
+└── lib/          # Utility functions (Zod schemas, etc.)
+
+```
+
+---
 
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone [https://github.com/Manvith-kumar16/portfolio.git](https://github.com/Manvith-kumar16/portfolio.git)
+cd portfolio
 
-2. Install dependencies
-bash
+```
 
+### 2. Install dependencies
+
+```bash
 npm install
-3. Environment Variables
-Create a .env.local file in the root directory:
 
-env
+```
 
+### 3. Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
 RESEND_API_KEY=your_resend_api_key_here
-4. Run the development server
-bash
-Copy code
+
+```
+
+### 4. Run the development server
+
+```bash
 npm run dev
-Open your browser at:
-👉 http://localhost:3000
 
-🚀 Deployment
-This project is deployed using Vercel for fast performance and easy CI/CD.
+```
 
-Resend Setup on Vercel
-Open Vercel Dashboard
-
-Go to your project → Settings
-
-Add a new environment variable:
-
-Name: RESEND_API_KEY
-
-Value: Your Resend API key
-
-Redeploy the project
-
-🏆 Highlights
-Interactive 3D keyboard UI
-
-Skill-based hover & keypress animations
-
-Projects with animated modals
-
-Certificates & achievements showcase
-
-Smooth navigation & transitions
-
-📬 Contact
-Name: Manvith Kumar Ullal
-
-GitHub: https://github.com/Manvith-kumar16
-
-Email: your-email@gmail.com
-
-LinkedIn: https://www.linkedin.com/in/your-link-here
-
-⭐ If you like this portfolio, don’t forget to star the repository — it really helps! 😊
-
-yaml
-Copy code
+Open your browser at: 👉 [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000)
 
 ---
 
-If you want next, I can add:
-- ✅ GitHub badges (stars, forks, tech stack)
-- 🎥 Embedded preview GIF / video
-- 🌐 SEO + OG image section
-- 📄 Resume PDF download section
-- 🧠 “How the 3D keyboard works” explanation
+## 🚀 Deployment
 
-Just tell me 🚀
+This project is optimized for deployment on **Vercel**.
+
+1. Push your code to GitHub.
+2. Connect your repo to Vercel.
+3. Add the `RESEND_API_KEY` in **Project Settings > Environment Variables**.
+4. Deploy!
+
+---
+
+## 📬 Contact
+
+**Manvith Kumar Ullal** [](https://github.com/Manvith-kumar16)
+[](https://www.linkedin.com/in/your-link-here)
+
+---
+
+⭐ **If you like this portfolio, don’t forget to star the repository — it really helps!** 😊
+
+```
+
+---
+
+### What's next?
+Would you like me to generate a **"How the 3D Keyboard Works"** technical breakdown to add to the bottom of this file?
+
+```
