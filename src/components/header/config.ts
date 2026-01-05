@@ -3,42 +3,42 @@ import { Link } from "@/types";
 const links: Link[] = [
   {
     title: "Home",
-    href: "/",
+    href: "#home",
     thumbnail: "/assets/nav-link-previews/landing.png",
   },
   {
     title: "About",
-    href: "/#about",
+    href: "#about",
     thumbnail: "/assets/nav-link-previews/about.png",
   },
   {
     title: "Skills",
-    href: "/#skills",
+    href: "#skills",
     thumbnail: "/assets/nav-link-previews/skills.png",
   },
   {
     title: "Education",
-    href: "/#education",
+    href: "#education",
     thumbnail: "/assets/nav-link-previews/education.png",
   },
   {
     title: "Certificates",
-    href: "/#certificates",
+    href: "#certificates",
     thumbnail: "/assets/nav-link-previews/certificates.png", 
   },
   {
     title: "Projects",
-    href: "/#projects",
+    href: "#projects",
     thumbnail: "/assets/nav-link-previews/projects.png",
   },
   {
     title: "Achievements",
-    href: "/#achievements",
+    href: "#achievements",
     thumbnail: "/assets/nav-link-previews/achievements.png", 
   },
   {
     title: "Contact",
-    href: "/#contact",
+    href: "#contact",
     thumbnail: "/assets/nav-link-previews/contact.png",
   },
 ];

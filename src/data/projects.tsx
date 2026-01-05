@@ -781,8 +781,8 @@ const projects: Project[] = [
   title: "LearnWise – Adaptive AI Learning Platform",
   src: "/assets/projects-screenshots/learnwise/1.png",
   screenshots: ["1.png", "2.png", "3.png", "4.png" , "5.png", "6.png", "7.png"],
-  live: "https://github.com/Manvith-kumar16/Tulu-Kalpuga", 
-  github: "https://github.com/Manvith-kumar16/Tulu-Kalpuga",
+  live: "https://learnwise-xi.vercel.app/", 
+  github: "https://github.com/Manvith-kumar16/Learnwise.git",
 
   skills: {
     frontend: [
@@ -863,8 +863,8 @@ const projects: Project[] = [
       PROJECT_SKILLS.firebase,
     ],
   },
-  live: "https://github.com/your-username/tulu-lipi-ai", // update if needed
-  github: "https://github.com/your-username/tulu-lipi-ai",
+  live: "https://github.com/Manvith-kumar16/Tulu-Kalpuga.git", // update if needed
+  github: "https://github.com/Manvith-kumar16/Tulu-Kalpuga.git",
 
   get content() {
     return (
