@@ -115,9 +115,8 @@ Open your browser at: 👉 [http://localhost:3000](https://www.google.com/search
 ---
 
 ## 📬 Contact
-
-**Manvith Kumar Ullal** [](https://github.com/Manvith-kumar16)
-[](https://www.linkedin.com/in/manvith-kumar16/)
+[GitHub:](https://github.com/Manvith-kumar16)
+[Linkedin:](https://www.linkedin.com/in/manvith-kumar16/)
 
 ---
 
