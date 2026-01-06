@@ -82,7 +82,7 @@ src/
 ### 1. Clone the repository
 
 ```bash
-git clone [https://github.com/Manvith-kumar16/portfolio.git](https://github.com/Manvith-kumar16/portfolio.git)
+git clone https://github.com/Manvith-kumar16/Portfolio
 cd portfolio
 
 ```
