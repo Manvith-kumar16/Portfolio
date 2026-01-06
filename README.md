@@ -15,14 +15,13 @@ This project showcases my skills, projects, achievements, and certifications thr
 ## 🌐 Live Preview
 
 🔗 **Live Website:** [https://manvith-portfolio.vercel.app](https://your-domain-here.vercel.app)  
-*(Replace with your actual deployed link)*
 
 ---
 
 ## ✨ Inspiration
 
 This portfolio is **inspired by** the creative work of:  
-👉 **Naresh Khatri** – [GitHub Profile](https://github.com/Naresh-Khatri/Portfolio)  
+👉 **Abhijit Lalasaheb Zende** – [GitHub Profile](https://github.com/Abhiz2411)  
 
 Huge thanks for the design inspiration and interaction ideas! 🙏
 
@@ -58,7 +57,7 @@ Huge thanks for the design inspiration and interaction ideas! 🙏
 
 ---
 
-## 📁 Project Structure (Highlights)
+## 📁 Project Structure 
 
 ```text
 public/
@@ -115,21 +114,10 @@ Open your browser at: 👉 [http://localhost:3000](https://www.google.com/search
 
 ---
 
-## 🚀 Deployment
-
-This project is optimized for deployment on **Vercel**.
-
-1. Push your code to GitHub.
-2. Connect your repo to Vercel.
-3. Add the `RESEND_API_KEY` in **Project Settings > Environment Variables**.
-4. Deploy!
-
----
-
 ## 📬 Contact
 
 **Manvith Kumar Ullal** [](https://github.com/Manvith-kumar16)
-[](https://www.linkedin.com/in/your-link-here)
+[](https://www.linkedin.com/in/manvith-kumar16/)
 
 ---
 
@@ -137,9 +125,3 @@ This project is optimized for deployment on **Vercel**.
 
 ```
 
----
-
-### What's next?
-Would you like me to generate a **"How the 3D Keyboard Works"** technical breakdown to add to the bottom of this file?
-
-```
