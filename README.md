@@ -122,6 +122,3 @@ Open your browser at: 👉 [http://localhost:3000](https://www.google.com/search
 ---
 
 ⭐ **If you like this portfolio, don’t forget to star the repository — it really helps!** 😊
-
-```
-
