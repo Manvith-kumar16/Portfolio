@@ -99,8 +99,9 @@ npm install
 Create a `.env.local` file in the root directory:
 
 ```env
-RESEND_API_KEY=your_resend_api_key_here
-
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id_here
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id_here
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key_here
 ```
 
 ### 4. Run the development server
