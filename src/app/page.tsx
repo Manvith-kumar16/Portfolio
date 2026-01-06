@@ -20,16 +20,13 @@ function MainPage() {
         <div className="top-0 z-0 fixed w-full h-screen">
   <AnimatedBackground />
 </div>
-
-
-
-        <HeroSection />
-        <SkillsSection />
-        <EducationSection />
-        <CertificatesSection />
-        <ProjectsSection />
-        <AchievementsSection />
-        <ContactSection />
+  <HeroSection />        {/* Home */}
+  <SkillsSection />
+  <ProjectsSection />
+  <EducationSection />
+  <CertificatesSection />
+  <AchievementsSection />
+  <ContactSection />
       </main>
     </SmoothScroll>
   );
