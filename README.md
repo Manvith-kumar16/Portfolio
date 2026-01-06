@@ -14,7 +14,7 @@ This project showcases my skills, projects, achievements, and certifications thr
 
 ## 🌐 Live Preview
 
-🔗 **Live Website:** [https://manvith-portfolio.vercel.app](https://your-domain-here.vercel.app)  
+🔗 **Live Website:** [https://manvith-kumar.vercel.app/](https://manvith-kumar.vercel.app/)  
 
 ---
 
