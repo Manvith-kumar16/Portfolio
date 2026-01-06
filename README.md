@@ -116,8 +116,8 @@ Open your browser at: 👉 [http://localhost:3000](https://www.google.com/search
 
 ## 📬 Contact
 
-# Gmail: manvithkumar.u@gmail.com
-# Linkedin: https://www.linkedin.com/in/manvith-kumar16/
+**Email:** manvithkumar.u@gmail.com  
+**LinkedIn:** https://www.linkedin.com/in/manvith-kumar16/
 
 ---
 
