@@ -17,16 +17,6 @@ This project showcases my skills, projects, achievements, and certifications thr
 🔗 **Live Website:** [https://manvith-kumar.vercel.app/](https://manvith-kumar.vercel.app/)  
 
 ---
-
-## ✨ Inspiration
-
-This portfolio is **inspired by** the creative work of:  
-👉 **Abhijit Lalasaheb Zende** – [GitHub Profile](https://github.com/Abhiz2411)  
-
-Huge thanks for the design inspiration and interaction ideas! 🙏
-
----
-
 ## 🔥 Features
 
 ### 🎹 3D Interactive Skills Section
