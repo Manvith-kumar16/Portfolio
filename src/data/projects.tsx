@@ -863,7 +863,7 @@ const projects: Project[] = [
       PROJECT_SKILLS.firebase,
     ],
   },
-  live: "https://Tulu-Kalpuga.vercel.app/", // update if needed
+  live: "https://tulukalpuga.vercel.app/", // update if needed
   github: "https://github.com/Manvith-kumar16/Tulu-Kalpuga.git",
 
   get content() {
