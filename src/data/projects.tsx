@@ -242,55 +242,55 @@ const PROJECT_SKILLS = {
     title: "OpenAI",
     bg: "black",
     fg: "white",
-    icon: <img src="assets/icons/openai-svgrepo-com_white.svg" alt="OpenAI"/>,
+    icon: <img src="assets/icons/openai-svgrepo-com_white.svg" alt="OpenAI" />,
   },
   netlify: {
     title: "Netlify",
     bg: "black",
     fg: "white",
-    icon: <SiNetlify/>,
+    icon: <SiNetlify />,
   },
   html: {
     title: "HTML5",
     bg: "black",
     fg: "white",
-    icon: <SiHtml5/>,
+    icon: <SiHtml5 />,
   },
   css: {
     title: "CSS3",
     bg: "black",
     fg: "white",
-    icon: <SiCss3/>,
+    icon: <SiCss3 />,
   },
   bootstrap: {
     title: "Bootstrap",
     bg: "black",
     fg: "white",
-    icon: <SiBootstrap/>,
+    icon: <SiBootstrap />,
   },
   maven: {
     title: "Maven",
     bg: "black",
     fg: "white",
-    icon: <SiApachemaven/>,
+    icon: <SiApachemaven />,
   },
   java: {
     title: "Java",
     bg: "black",
     fg: "white",
-    icon: <img src="assets/icons/icons8-java.svg" alt="Java"/>,
+    icon: <img src="assets/icons/icons8-java.svg" alt="Java" />,
   },
   cplusplus: {
     title: "C++",
     bg: "black",
     fg: "white",
-    icon: <SiCplusplus/>,
+    icon: <SiCplusplus />,
   },
   arduino: {
     title: "Arduino",
     bg: "black",
     fg: "white",
-    icon: <SiArduino/>,
+    icon: <SiArduino />,
   },
 };
 export type Project = {
@@ -773,321 +773,386 @@ const projects: Project[] = [
   // id: "smartparkingassitant",
   // id: "smartjobtracker",
   //  id: "savinderpurisportfolio",
-  
+
+  // MLCode
+  {
+    id: "mlcode",
+    category: "AI & EdTech",
+    title: "MLCode – The LeetCode for Machine Learning Engineers",
+    src: "/assets/projects-screenshots/mlcode/1.png",
+    screenshots: ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png"],
+
+    live: "https://mlcode.vercel.app/", // update if different
+    github: "https://github.com/Manvith-kumar16/MLCode.git",
+
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.vite,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.mongo,
+      ],
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            <strong>MLCode</strong> is a LeetCode-style interactive platform built
+            specifically for Machine Learning Engineers and Data Scientists.
+            It enables users to practice real-world ML challenges across topics
+            such as Classification, Regression, NLP, Deep Learning, and Computer Vision.
+            <br /><br />
+            The platform includes a fully integrated in-browser Python editor
+            powered by Monaco (VS Code engine), real-time code execution against
+            hidden test cases, and a competitive global leaderboard system.
+            <br /><br />
+            Built with a modern React + TypeScript frontend and a scalable
+            Node.js + Express backend powered by MongoDB, MLCode features
+            authentication (JWT + Google OAuth), submission history tracking,
+            discussion threads, activity heatmaps, profile rankings, and
+            gamified progression with badges and streaks.
+            <br /><br />
+            Designed with a premium dark UI using TailwindCSS and Framer Motion,
+            MLCode delivers a polished, production-grade experience similar to
+            industry-level coding platforms.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/mlcode/1.png`,
+              `${BASE_PATH}/mlcode/2.png`,
+              `${BASE_PATH}/mlcode/3.png`,
+              `${BASE_PATH}/mlcode/4.png`,
+              `${BASE_PATH}/mlcode/5.png`,
+              `${BASE_PATH}/mlcode/6.png`,
+              `${BASE_PATH}/mlcode/7.png`,
+            ]}
+          />
+        </div>
+      );
+    },
+  },
   // LearnWise
   {
-  id: "aidockerfileoptimizer",
-  category: "AI & EdTech",
-  title: "LearnWise – Adaptive AI Learning Platform",
-  src: "/assets/projects-screenshots/learnwise/1.png",
-  screenshots: ["1.png", "2.png", "3.png", "4.png" , "5.png", "6.png", "7.png"],
-  live: "https://learnwise-xi.vercel.app/", 
-  github: "https://github.com/Manvith-kumar16/Learnwise.git",
+    id: "aidockerfileoptimizer",
+    category: "AI & EdTech",
+    title: "LearnWise – Adaptive AI Learning Platform",
+    src: "/assets/projects-screenshots/learnwise/1.png",
+    screenshots: ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png"],
+    live: "https://learnwise-xi.vercel.app/",
+    github: "https://github.com/Manvith-kumar16/Learnwise.git",
 
-  skills: {
-    frontend: [
-      PROJECT_SKILLS.react,
-      PROJECT_SKILLS.js,          // used instead of typescript
-      PROJECT_SKILLS.vite,
-      PROJECT_SKILLS.tailwind,
-      PROJECT_SKILLS.next,        // closest match for advanced UI stack
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.js,          // used instead of typescript
+        PROJECT_SKILLS.vite,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.next,        // closest match for advanced UI stack
+      ],
+      backend: [
+        PROJECT_SKILLS.supabase,
+        PROJECT_SKILLS.postgres,    // ✅ correct key
+        PROJECT_SKILLS.netlify,     // deployment
+      ],
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            <strong>LearnWise</strong> is an adaptive, AI-powered assessment and
+            practice platform that moves beyond traditional one-size-fits-all
+            testing. It diagnoses individual learning gaps in listening, grasping,
+            retention, and application, and provides targeted interventions.
+            <br /><br />
+            The platform uses an adaptive evaluation engine that dynamically adjusts
+            question difficulty based on student performance across Quantitative
+            Aptitude, Logical Reasoning & Data Interpretation, and Verbal Ability.
+            <br /><br />
+            Built with a modern React-based frontend and powered by Supabase on the
+            backend, LearnWise offers real-time dashboards, detailed performance
+            reports, gamification (XP, streaks), and admin-controlled dataset
+            management for scalable learning.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/learnwise/1.png`,
+              `${BASE_PATH}/learnwise/2.png`,
+              `${BASE_PATH}/learnwise/3.png`,
+              `${BASE_PATH}/learnwise/4.png`,
+              `${BASE_PATH}/learnwise/5.png`,
+              `${BASE_PATH}/learnwise/6.png`,
+              `${BASE_PATH}/learnwise/7.png`,
+            ]}
+          />
+        </div>
+      );
+    },
+  },
+  {
+    // 02. Tulu Lipi AI Learning Platform
+    id: "financeme",
+    category: "AI & Cultural Preservation",
+    title: "TULU KALPUGA - AI-Powered Platform for Learning Tulu Lipi",
+    src: "/assets/projects-screenshots/tulu-lipi/1.png",
+    screenshots: [
+      "/assets/projects-screenshots/tulu-lipi/1.png",
+      "/assets/projects-screenshots/tulu-lipi/2.png",
+      "/assets/projects-screenshots/tulu-lipi/3.png",
+      "/assets/projects-screenshots/tulu-lipi/4.png",
+      "/assets/projects-screenshots/tulu-lipi/5.png",
+
     ],
-    backend: [
-      PROJECT_SKILLS.supabase,
-      PROJECT_SKILLS.postgres,    // ✅ correct key
-      PROJECT_SKILLS.netlify,     // deployment
-    ],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.js,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.html,
+        PROJECT_SKILLS.css,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.mongo,
+        PROJECT_SKILLS.firebase,
+      ],
+    },
+    live: "https://tulukalpuga.vercel.app/", // update if needed
+    github: "https://github.com/Manvith-kumar16/Tulu-Kalpuga.git",
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            AI-Powered Interactive Platform for Learning & Preserving Tulu Lipi
+          </TypographyP>
+
+          <TypographyP className="font-mono">
+            The <strong>Tulu Lipi AI Learning Platform</strong> is a technology-driven
+            initiative aimed at preserving and revitalizing the ancient Tulu Lipi
+            script—an essential part of South India’s linguistic and cultural
+            heritage. Due to the lack of modern, interactive learning tools, the
+            script is rapidly disappearing from everyday use, especially among
+            younger generations.
+            <br /><br />
+            This platform provides an engaging and accessible learning experience
+            through animated stroke guidance, interactive handwriting practice,
+            pronunciation modules, and gamified quizzes. AI-powered feedback helps
+            learners improve stroke accuracy, writing fluency, and pronunciation in
+            real time.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/tulu-lipi/1.png`,
+              `${BASE_PATH}/tulu-lipi/2.png`,
+              `${BASE_PATH}/tulu-lipi/3.png`,
+              `${BASE_PATH}/tulu-lipi/4.png`,
+              `${BASE_PATH}/tulu-lipi/5.png`,
+            ]}
+          />
+        </div>
+      );
+    },
+  },
+  { // 03. Flappy Bird Game
+    id: "smartparkingassitant",
+    category: "Game Development",
+    title: "Flappy Bird (Unity Game)",
+    src: "/assets/projects-screenshots/flappybird/1.jpg",
+    screenshots: ["1.jpg", "2.jpg", "3.jpg"],
+    live: "https://github.com/Manvith-kumar16/Flappy-Bird", // update if needed
+    github: "https://github.com/Manvith-kumar16/Flappy-Bird",
+
+    skills: {
+      frontend: [],
+      backend: [PROJECT_SKILLS.cplusplus], // C# not listed, closest logical fit
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            Flappy Bird is a modern recreation of the classic arcade-style mobile
+            game, built using the Unity game engine to demonstrate core game
+            development concepts. The game features a simple flap-to-fly mechanic
+            controlled by a single input, with physics-based movement using
+            Rigidbody2D for smooth and responsive gameplay.
+            <br /><br />
+            The project includes procedurally generated pipes with randomized gap
+            positions, real-time score tracking, collision detection, and a game
+            over screen with restart functionality. Built with C# scripting and
+            Unity’s 2D physics system, this project highlights skills in game logic
+            design, performance optimization, and interactive UI management.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/flappybird/1.jpg`,
+              `${BASE_PATH}/flappybird/2.jpg`,
+              `${BASE_PATH}/flappybird/3.jpg`,
+            ]}
+          />
+        </div>
+      );
+    },
+  },
+  {
+    // 04. Food Ordering Web App
+    id: "portfolio",
+    category: "Frontend Web Application",
+    title: "FoodWallah - Food Ordering Web Application",
+    src: "/assets/projects-screenshots/food-ordering/2.png",
+    screenshots: ["1.png", "2.png", "3.png", "4.png"],
+    live: "https://github.com/Manvith-kumar16/FoodWallah", // optional (or GitHub Pages)
+    github: "https://github.com/Manvith-kumar16/FoodWallah",
+
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.html,
+        PROJECT_SKILLS.css,
+        PROJECT_SKILLS.js,
+        PROJECT_SKILLS.bootstrap,
+      ],
+      backend: [],
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            Food Ordering Web Application is a modern, client-side web application built using pure HTML, CSS, and JavaScript, focused on delivering a smooth and responsive user experience. The project demonstrates strong frontend fundamentals through interactive UI components, category-based menu browsing, and a cart simulation that allows users to add, remove, and update item quantities without any backend dependency.
+            <br /><br />
+            Designed as a fully frontend-only solution, the application works seamlessly across desktop, tablet, and mobile devices using responsive layouts powered by Flexbox and Grid. With no server or database required, it can be run directly in a browser, making it lightweight, fast, and easy to deploy while showcasing practical UI/UX design and JavaScript interactivity skills.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/food-ordering/1.png`,
+              `${BASE_PATH}/food-ordering/2.png`,
+              `${BASE_PATH}/food-ordering/3.png`,
+              `${BASE_PATH}/food-ordering/4.png`,
+            ]}
+          />
+        </div>
+      );
+    },
   },
 
-  get content() {
-    return (
-      <div>
-        <TypographyP className="font-mono">
-          <strong>LearnWise</strong> is an adaptive, AI-powered assessment and
-          practice platform that moves beyond traditional one-size-fits-all
-          testing. It diagnoses individual learning gaps in listening, grasping,
-          retention, and application, and provides targeted interventions.
-          <br /><br />
-          The platform uses an adaptive evaluation engine that dynamically adjusts
-          question difficulty based on student performance across Quantitative
-          Aptitude, Logical Reasoning & Data Interpretation, and Verbal Ability.
-          <br /><br />
-          Built with a modern React-based frontend and powered by Supabase on the
-          backend, LearnWise offers real-time dashboards, detailed performance
-          reports, gamification (XP, streaks), and admin-controlled dataset
-          management for scalable learning.
-        </TypographyP>
+  { // 05. Mobile Brand Detector project
+    id: "smartjobtracker",
+    category: "AI & Machine Learning",
+    title: "Mobile Brand Detector",
+    src: "/assets/projects-screenshots/mobilebranddetector/1.png",
+    screenshots: ["1.png"],
+    live: "https://github.com/Manvith-kumar16/Mobile-Brand-Detector", // update if needed
+    github: "https://github.com/Manvith-kumar16/Mobile-Brand-Detector",
 
-        <ProjectsLinks live={this.live} repo={this.github} />
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.html,
+        PROJECT_SKILLS.js,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.python,
+      ],
+    },
 
-        <SlideShow
-          images={[
-            `${BASE_PATH}/learnwise/1.png`,
-            `${BASE_PATH}/learnwise/2.png`,
-            `${BASE_PATH}/learnwise/3.png`,
-            `${BASE_PATH}/learnwise/4.png`,
-            `${BASE_PATH}/learnwise/5.png`,
-            `${BASE_PATH}/learnwise/6.png`,
-            `${BASE_PATH}/learnwise/7.png`,
-          ]}
-        />
-      </div>
-    );
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            Mobile Brand Detector is an end-to-end deep learning application that
+            identifies the brand and model of a mobile phone from an uploaded
+            image. The project addresses the challenge of visual product
+            recognition by combining a trained machine learning model with a
+            simple and intuitive web interface.
+            <br /><br />
+            The backend is built using Python and Flask, exposing a REST API for
+            image inference, while the deep learning model is developed using
+            TensorFlow and Keras with a fine-tuned MobileNetV2 architecture. The
+            frontend uses HTML, JavaScript, and Tailwind CSS to provide a clean,
+            responsive user experience, showcasing a complete AI-powered
+            full-stack workflow.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/mobilebranddetector/1.png`,
+            ]}
+          />
+        </div>
+      );
+    },
   },
-}, 
-  { 
-  // 02. Tulu Lipi AI Learning Platform
-  id: "financeme",
-  category: "AI & Cultural Preservation",
-  title: "TULU KALPUGA - AI-Powered Platform for Learning Tulu Lipi",
-  src: "/assets/projects-screenshots/tulu-lipi/1.png",
-  screenshots: [
-    "/assets/projects-screenshots/tulu-lipi/1.png",
-    "/assets/projects-screenshots/tulu-lipi/2.png",
-    "/assets/projects-screenshots/tulu-lipi/3.png",
-    "/assets/projects-screenshots/tulu-lipi/4.png",
-    "/assets/projects-screenshots/tulu-lipi/5.png",
-    
-  ],
-  skills: {
-    frontend: [
-      PROJECT_SKILLS.react,
-      PROJECT_SKILLS.js,
-      PROJECT_SKILLS.tailwind,
-      PROJECT_SKILLS.html,
-      PROJECT_SKILLS.css,
-    ],
-    backend: [
-      PROJECT_SKILLS.node,
-      PROJECT_SKILLS.mongo,
-      PROJECT_SKILLS.firebase,
-    ],
+  { // 06. Amazon Clone project
+    id: "savinderpurisportfolio",
+    category: "Web Development",
+    title: "Amazon.com Clone",
+    src: "/assets/projects-screenshots/amazonclone/1.png",
+    screenshots: ["1.png", "2.png", "3.png"],
+    live: "https://github.com/Manvith-kumar16/Amazon-Clone", // update if deployed
+    github: "https://github.com/Manvith-kumar16/Amazon-Clone",
+
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.html,
+        PROJECT_SKILLS.css,
+      ],
+      backend: [],
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            Amazon.com Clone is a modern, static web project that recreates the
+            homepage layout of Amazon using only HTML and CSS. The project focuses
+            on building a clean, responsive interface that closely resembles the
+            original platform while demonstrating strong fundamentals of layout,
+            spacing, and visual hierarchy.
+            <br /><br />
+            It features a responsive navigation bar, a dynamic hero section,
+            structured product grid layouts, and a detailed multi-column footer.
+            Icons are integrated using Font Awesome to enhance usability and
+            visual clarity. This project highlights practical frontend skills in
+            responsive design and UI replication without relying on JavaScript or
+            backend technologies.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/amazonclone/1.png`,
+              `${BASE_PATH}/amazonclone/2.png`,
+              `${BASE_PATH}/amazonclone/3.png`,
+
+            ]}
+          />
+        </div>
+      );
+    },
   },
-  live: "https://tulukalpuga.vercel.app/", // update if needed
-  github: "https://github.com/Manvith-kumar16/Tulu-Kalpuga.git",
-
-  get content() {
-    return (
-      <div>
-        <TypographyP className="font-mono text-2xl text-center">
-          AI-Powered Interactive Platform for Learning & Preserving Tulu Lipi
-        </TypographyP>
-
-        <TypographyP className="font-mono">
-          The <strong>Tulu Lipi AI Learning Platform</strong> is a technology-driven
-          initiative aimed at preserving and revitalizing the ancient Tulu Lipi
-          script—an essential part of South India’s linguistic and cultural
-          heritage. Due to the lack of modern, interactive learning tools, the
-          script is rapidly disappearing from everyday use, especially among
-          younger generations.
-          <br /><br />
-          This platform provides an engaging and accessible learning experience
-          through animated stroke guidance, interactive handwriting practice,
-          pronunciation modules, and gamified quizzes. AI-powered feedback helps
-          learners improve stroke accuracy, writing fluency, and pronunciation in
-          real time.
-        </TypographyP>
-
-        <ProjectsLinks live={this.live} repo={this.github} />
-
-        <SlideShow
-          images={[
-            `${BASE_PATH}/tulu-lipi/1.png`,
-            `${BASE_PATH}/tulu-lipi/2.png`,
-            `${BASE_PATH}/tulu-lipi/3.png`,
-            `${BASE_PATH}/tulu-lipi/4.png`,
-            `${BASE_PATH}/tulu-lipi/5.png`,
-          ]}
-        />
-      </div>
-    );
-  },
-},
-{ // 03. Flappy Bird Game
-  id: "smartparkingassitant",
-  category: "Game Development",
-  title: "Flappy Bird (Unity Game)",
-  src: "/assets/projects-screenshots/flappybird/1.jpg",
-  screenshots: ["1.jpg", "2.jpg", "3.jpg"],
-  live: "https://github.com/Manvith-kumar16/Flappy-Bird", // update if needed
-  github: "https://github.com/Manvith-kumar16/Flappy-Bird",
-
-  skills: {
-    frontend: [],
-    backend: [PROJECT_SKILLS.cplusplus], // C# not listed, closest logical fit
-  },
-
-  get content() {
-    return (
-      <div>
-        <TypographyP className="font-mono">
-          Flappy Bird is a modern recreation of the classic arcade-style mobile
-          game, built using the Unity game engine to demonstrate core game
-          development concepts. The game features a simple flap-to-fly mechanic
-          controlled by a single input, with physics-based movement using
-          Rigidbody2D for smooth and responsive gameplay.
-          <br /><br />
-          The project includes procedurally generated pipes with randomized gap
-          positions, real-time score tracking, collision detection, and a game
-          over screen with restart functionality. Built with C# scripting and
-          Unity’s 2D physics system, this project highlights skills in game logic
-          design, performance optimization, and interactive UI management.
-        </TypographyP>
-
-        <ProjectsLinks live={this.live} repo={this.github} />
-
-        <SlideShow
-          images={[
-            `${BASE_PATH}/flappybird/1.jpg`,
-            `${BASE_PATH}/flappybird/2.jpg`,
-            `${BASE_PATH}/flappybird/3.jpg`,
-          ]}
-        />
-      </div>
-    );
-  },
-},
-  { 
-  // 04. Food Ordering Web App
-  id: "portfolio",
-  category: "Frontend Web Application",
-  title: "FoodWallah - Food Ordering Web Application",
-  src: "/assets/projects-screenshots/food-ordering/2.png",
-  screenshots: ["1.png", "2.png", "3.png", "4.png"],
-  live: "https://github.com/Manvith-kumar16/FoodWallah", // optional (or GitHub Pages)
-  github: "https://github.com/Manvith-kumar16/FoodWallah",
-
-  skills: {
-    frontend: [
-      PROJECT_SKILLS.html,
-      PROJECT_SKILLS.css,
-      PROJECT_SKILLS.js,
-      PROJECT_SKILLS.bootstrap,
-    ],
-    backend: [],
-  },
-
-  get content() {
-    return (
-      <div>
-        <TypographyP className="font-mono">
-         Food Ordering Web Application is a modern, client-side web application built using pure HTML, CSS, and JavaScript, focused on delivering a smooth and responsive user experience. The project demonstrates strong frontend fundamentals through interactive UI components, category-based menu browsing, and a cart simulation that allows users to add, remove, and update item quantities without any backend dependency.
-<br /><br />
-Designed as a fully frontend-only solution, the application works seamlessly across desktop, tablet, and mobile devices using responsive layouts powered by Flexbox and Grid. With no server or database required, it can be run directly in a browser, making it lightweight, fast, and easy to deploy while showcasing practical UI/UX design and JavaScript interactivity skills.
-        </TypographyP>
-
-        <ProjectsLinks live={this.live} repo={this.github} />
-
-        <SlideShow
-          images={[
-            `${BASE_PATH}/food-ordering/1.png`,
-            `${BASE_PATH}/food-ordering/2.png`,
-            `${BASE_PATH}/food-ordering/3.png`,
-            `${BASE_PATH}/food-ordering/4.png`,
-          ]}
-        />
-      </div>
-    );
-  },
-},
-
-{ // 05. Mobile Brand Detector project
-  id: "smartjobtracker",
-  category: "AI & Machine Learning",
-  title: "Mobile Brand Detector",
-  src: "/assets/projects-screenshots/mobilebranddetector/1.png",
-  screenshots: ["1.png"],
-  live: "https://github.com/Manvith-kumar16/Mobile-Brand-Detector", // update if needed
-  github: "https://github.com/Manvith-kumar16/Mobile-Brand-Detector",
-
-  skills: {
-    frontend: [
-      PROJECT_SKILLS.html,
-      PROJECT_SKILLS.js,
-      PROJECT_SKILLS.tailwind,
-    ],
-    backend: [
-      PROJECT_SKILLS.python,
-    ],
-  },
-
-  get content() {
-    return (
-      <div>
-        <TypographyP className="font-mono">
-          Mobile Brand Detector is an end-to-end deep learning application that
-          identifies the brand and model of a mobile phone from an uploaded
-          image. The project addresses the challenge of visual product
-          recognition by combining a trained machine learning model with a
-          simple and intuitive web interface.
-          <br /><br />
-          The backend is built using Python and Flask, exposing a REST API for
-          image inference, while the deep learning model is developed using
-          TensorFlow and Keras with a fine-tuned MobileNetV2 architecture. The
-          frontend uses HTML, JavaScript, and Tailwind CSS to provide a clean,
-          responsive user experience, showcasing a complete AI-powered
-          full-stack workflow.
-        </TypographyP>
-
-        <ProjectsLinks live={this.live} repo={this.github} />
-
-        <SlideShow
-          images={[
-            `${BASE_PATH}/mobilebranddetector/1.png`,
-          ]}
-        />
-      </div>
-    );
-  },
-},
-{ // 06. Amazon Clone project
-  id: "savinderpurisportfolio",
-  category: "Web Development",
-  title: "Amazon.com Clone",
-  src: "/assets/projects-screenshots/amazonclone/1.png",
-  screenshots: ["1.png", "2.png", "3.png"],
-  live: "https://github.com/Manvith-kumar16/Amazon-Clone", // update if deployed
-  github: "https://github.com/Manvith-kumar16/Amazon-Clone",
-
-  skills: {
-    frontend: [
-      PROJECT_SKILLS.html,
-      PROJECT_SKILLS.css,
-    ],
-    backend: [],
-  },
-
-  get content() {
-    return (
-      <div>
-        <TypographyP className="font-mono">
-          Amazon.com Clone is a modern, static web project that recreates the
-          homepage layout of Amazon using only HTML and CSS. The project focuses
-          on building a clean, responsive interface that closely resembles the
-          original platform while demonstrating strong fundamentals of layout,
-          spacing, and visual hierarchy.
-          <br /><br />
-          It features a responsive navigation bar, a dynamic hero section,
-          structured product grid layouts, and a detailed multi-column footer.
-          Icons are integrated using Font Awesome to enhance usability and
-          visual clarity. This project highlights practical frontend skills in
-          responsive design and UI replication without relying on JavaScript or
-          backend technologies.
-        </TypographyP>
-
-        <ProjectsLinks live={this.live} repo={this.github} />
-
-        <SlideShow
-          images={[
-            `${BASE_PATH}/amazonclone/1.png`,
-            `${BASE_PATH}/amazonclone/2.png`,
-            `${BASE_PATH}/amazonclone/3.png`,
-  
-          ]}
-        />
-      </div>
-    );
-  },
-},
 ];
 export default projects;
