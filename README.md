@@ -111,5 +111,3 @@ Open your browser at: 👉 [http://localhost:3000](https://www.google.com/search
 **LinkedIn:** https://www.linkedin.com/in/manvith-kumar16/
 
 ---
-
-⭐ **If you like this portfolio, don’t forget to star the repository — it really helps!** 😊
