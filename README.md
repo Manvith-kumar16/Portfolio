@@ -94,7 +94,7 @@ NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id_here
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key_here
 ```
 
-### 4. Run the development server
+### 4. Run the development  server
 
 ```bash
 npm run dev
