@@ -82,9 +82,7 @@ const HeroSection = () => {
               </div>
               <div className="mt-8 md:ml-2 flex flex-col gap-3">
                 <Link
-                  href={
-                    ""
-                  }
+                  href="/resume.pdf"
                   target="_blank"
                   className="flex-1"
                 >
