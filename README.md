@@ -105,7 +105,7 @@ Open your browser at: 👉 [http://localhost:3000](https://www.google.com/search
 
 ---
 
-## 📬 Contact
+## 📬  Contact
 
 **Email:** manvithkumar.u@gmail.com  
 **LinkedIn:** https://www.linkedin.com/in/manvith-kumar16/
