@@ -8,10 +8,13 @@ import AnimatedBackground from "@/components/animated-background";
 import HeroSection from "@/components/sections/hero";
 import SkillsSection from "@/components/sections/skills";
 import EducationSection from "@/components/sections/education";
+import ExperienceSection from "@/components/sections/experience";
+import ResearchSection from "@/components/sections/research";
 import CertificatesSection from "@/components/sections/certificates";
 import ProjectsSection from "@/components/sections/projects";
 import AchievementsSection from "@/components/sections/achievements";
 import ContactSection from "@/components/sections/contact";
+import BeyondCodingSection from "@/components/sections/beyond-coding";
 
 function MainPage() {
   return (
@@ -23,9 +26,12 @@ function MainPage() {
   <HeroSection />        {/* Home */}
   <SkillsSection />
   <ProjectsSection />
+  <ExperienceSection />
+  <ResearchSection />
   <EducationSection />
   <CertificatesSection />
   <AchievementsSection />
+  <BeyondCodingSection />
   <ContactSection />
       </main>
     </SmoothScroll>

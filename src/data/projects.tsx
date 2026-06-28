@@ -29,13 +29,13 @@ import {
   SiVite,
   SiNetlify,
   SiHtml5,
-  SiCss3,
   SiBootstrap,
   SiApachemaven,
   SiCplusplus,
   SiArduino,
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import { FaCss3Alt } from "react-icons/fa";
 import css from "styled-jsx/css";
 const BASE_PATH = "/assets/projects-screenshots";
 
@@ -260,7 +260,7 @@ const PROJECT_SKILLS = {
     title: "CSS3",
     bg: "black",
     fg: "white",
-    icon: <SiCss3 />,
+    icon: <FaCss3Alt />,
   },
   bootstrap: {
     title: "Bootstrap",

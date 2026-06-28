@@ -19,9 +19,9 @@ const ContactSection = () => {
         <h2
           className={cn(
             "relative z-20 pointer-events-none",
-          "text-4xl md:text-6xl font-bold text-center",
-          "bg-clip-text text-transparent",
-          "bg-gradient-to-b from-white via-slate-200 to-slate-400",
+          "text-5xl md:text-7xl font-black text-center tracking-tight",
+          "text-white",
+          "[text-shadow:0_4px_8px_rgba(0,0,0,0.9),0_0_20px_rgba(0,0,0,0.8)]",
           "mb-10 md:mb-12"
           )}
         >

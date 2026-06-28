@@ -22,6 +22,16 @@ const links: Link[] = [
     thumbnail: "/assets/nav-link-previews/projects.png",
   },
   {
+    title: "Experience",
+    href: "#experience",
+    thumbnail: "/assets/nav-link-previews/projects.png",
+  },
+  {
+    title: "Research",
+    href: "#research",
+    thumbnail: "/assets/nav-link-previews/projects.png",
+  },
+  {
     title: "Education",
     href: "#education",
     thumbnail: "/assets/nav-link-previews/education.png",
@@ -35,6 +45,11 @@ const links: Link[] = [
     title: "Achievements",
     href: "#achievements",
     thumbnail: "/assets/nav-link-previews/achievements.png", 
+  },
+  {
+    title: "Beyond Coding",
+    href: "#beyond-coding",
+    thumbnail: "/assets/nav-link-previews/achievements.png",
   },
   {
     title: "Contact",
