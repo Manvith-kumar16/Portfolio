@@ -1,4 +1,5 @@
 "use client";
+import { ExternalLink } from "lucide-react";
 
 const ResearchSection = () => {
   const papers = [
@@ -6,6 +7,7 @@ const ResearchSection = () => {
       number: "01",
       title:
         "Multimodal Deep Learning for Feature-Level Fusion in Automated Arecanut Quality Classification Using RGB and X-ray Imaging",
+      link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6992593&__cf_chl_f_tk=SAXhhbkV0YcSAhCbGPWCClpaQt38hCStSxC7Vm3wjNg-1782759609-1.0.1.1-m3JFdRir3o8fO0UUcw5nsYA9v1lDH49bcSjBvU6tBaA",
       type: "SSRN Preprint",
       year: "2026",
       status: "Published",
@@ -144,16 +146,30 @@ const ResearchSection = () => {
               </ul>
             </div>
 
-            {/* Tags */}
-            <div className="flex flex-wrap gap-2">
-              {paper.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="px-3 py-1 text-xs font-medium rounded-full bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 border border-slate-200 dark:border-zinc-700"
+            {/* Tags and Action */}
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mt-2">
+              <div className="flex flex-wrap gap-2">
+                {paper.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 text-xs font-medium rounded-full bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 border border-slate-200 dark:border-zinc-700"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              
+              {paper.link && (
+                <a 
+                  href={paper.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 px-4 py-2 text-xs font-bold bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 hover:text-blue-300 border border-blue-500/20 rounded-xl transition-colors shrink-0"
                 >
-                  {tag}
-                </span>
-              ))}
+                  View Paper
+                  <ExternalLink size={14} />
+                </a>
+              )}
             </div>
           </div>
         ))}

@@ -15,23 +15,34 @@ type ArtItem = {
   description?: string;
 };
 
-// Add your artwork images to /public/assets/art/ and update this list
 const ART_ITEMS: ArtItem[] = [
-  // Example entries — replace src paths once you add your images
-  {
-    id: 1,
-    title: "Sketch 1",
-    category: "sketches",
-    src: "/assets/art/sketch-1.jpg",
-    description: "Pencil sketch",
-  },
-  {
-    id: 2,
-    title: "Painting 1",
-    category: "paintings",
-    src: "/assets/art/painting-1.jpg",
-    description: "Acrylic on canvas",
-  },
+  { id: 1, title: "Sketch 1", category: "sketches", src: "/assets/Drawing/s1.jpg" },
+  { id: 2, title: "Painting 1", category: "paintings", src: "/assets/Drawing/p1.jpg" },
+  { id: 3, title: "Sketch 2", category: "sketches", src: "/assets/Drawing/s2.jpg" },
+  { id: 4, title: "Painting 2", category: "paintings", src: "/assets/Drawing/p2.jpg" },
+  { id: 5, title: "Sketch 3", category: "sketches", src: "/assets/Drawing/s3.jpg" },
+  { id: 6, title: "Painting 3", category: "paintings", src: "/assets/Drawing/p3.jpg" },
+  { id: 7, title: "Sketch 4", category: "sketches", src: "/assets/Drawing/s4.jpg" },
+  { id: 8, title: "Painting 4", category: "paintings", src: "/assets/Drawing/p4.jpg" },
+  { id: 9, title: "Sketch 5", category: "sketches", src: "/assets/Drawing/s5.jpg" },
+  { id: 10, title: "Painting 5", category: "paintings", src: "/assets/Drawing/p5.jpg" },
+  { id: 11, title: "Sketch 6", category: "sketches", src: "/assets/Drawing/s6.jpg" },
+  { id: 12, title: "Painting 6", category: "paintings", src: "/assets/Drawing/p6.jpg" },
+  { id: 13, title: "Sketch 7", category: "sketches", src: "/assets/Drawing/s7.jpg" },
+  { id: 14, title: "Painting 7", category: "paintings", src: "/assets/Drawing/p7.jpg" },
+  { id: 15, title: "Sketch 8", category: "sketches", src: "/assets/Drawing/s8.jpg" },
+  { id: 16, title: "Painting 8", category: "paintings", src: "/assets/Drawing/p8.jpg" },
+  { id: 17, title: "Sketch 9", category: "sketches", src: "/assets/Drawing/s9.jpg" },
+  { id: 18, title: "Painting 9", category: "paintings", src: "/assets/Drawing/p9.jpg" },
+  { id: 19, title: "Sketch 10", category: "sketches", src: "/assets/Drawing/s10.jpg" },
+  { id: 20, title: "Painting 10", category: "paintings", src: "/assets/Drawing/p10.jpg" },
+  { id: 21, title: "Sketch 11", category: "sketches", src: "/assets/Drawing/s11.jpg" },
+  { id: 22, title: "Painting 11", category: "paintings", src: "/assets/Drawing/p11.jpg" },
+  { id: 23, title: "Sketch 12", category: "sketches", src: "/assets/Drawing/s12.jpg" },
+  { id: 24, title: "Painting 12", category: "paintings", src: "/assets/Drawing/p12.jpg" },
+  { id: 25, title: "Sketch 13", category: "sketches", src: "/assets/Drawing/s13.jpg" },
+  { id: 26, title: "Painting 13", category: "paintings", src: "/assets/Drawing/p13.jpg" },
+  { id: 27, title: "Painting 14", category: "paintings", src: "/assets/Drawing/p14.jpg" },
 ];
 
 const CATEGORY_LABELS: { value: ArtCategory; label: string; icon: React.ReactNode }[] = [
@@ -92,9 +103,9 @@ const BeyondCodingSection = () => {
           <p className="text-sm">No artwork here yet — check back soon!</p>
         </div>
       ) : activeCategory === "all" ? (
-        <div className="relative w-full overflow-hidden py-4 -mx-4 px-4 md:mx-0 md:px-0 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <div className="relative w-[100vw] left-1/2 -translate-x-1/2 overflow-hidden py-4 [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
           <motion.div
-            className="flex gap-4 w-max"
+            className="flex gap-4 w-max px-4"
             animate={{ x: ["0%", "-50%"] }}
             transition={{
               duration: filtered.length * 15, // Speed depends on number of items
@@ -106,20 +117,15 @@ const BeyondCodingSection = () => {
             {[...filtered, ...filtered, ...filtered, ...filtered].map((item, index) => (
               <div
                 key={`${item.id}-${index}`}
-                className="group relative w-64 md:w-80 aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-white/30 transition-all duration-300 shrink-0"
+                className="group relative w-64 md:w-80 aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-white/30 hover:scale-110 hover:z-10 hover:shadow-2xl transition-all duration-300 shrink-0"
                 onClick={() => setLightbox(item)}
               >
                 <Image
                   src={item.src}
                   alt={item.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover transition-transform duration-500"
                 />
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2">
-                  <ZoomIn size={28} className="text-white" />
-                  <p className="text-white font-semibold text-sm text-center px-2">{item.title}</p>
-                </div>
                 {/* Category Badge */}
                 <span className="absolute top-3 left-3 flex items-center gap-1 px-2 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white text-xs border border-white/10">
                   {item.category === "sketches" ? (
@@ -147,7 +153,8 @@ const BeyondCodingSection = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
-                className="group relative break-inside-avoid rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-white/30 transition-all duration-300"
+                whileHover={{ scale: 1.10, zIndex: 10 }}
+                className="group relative break-inside-avoid rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-white/30 hover:shadow-2xl transition-all duration-300"
                 onClick={() => setLightbox(item)}
               >
                 <div className="relative w-full aspect-[4/5]">
@@ -155,16 +162,8 @@ const BeyondCodingSection = () => {
                     src={item.src}
                     alt={item.title}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500"
                   />
-                </div>
-                {/* Hover Overlay */}
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2">
-                  <ZoomIn size={28} className="text-white" />
-                  <p className="text-white font-semibold text-sm">{item.title}</p>
-                  {item.description && (
-                    <p className="text-white/70 text-xs">{item.description}</p>
-                  )}
                 </div>
                 {/* Category Badge */}
                 <span className="absolute top-3 left-3 flex items-center gap-1 px-2 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white text-xs border border-white/10">

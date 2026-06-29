@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
-import { File, Mail, ChevronDown, ExternalLink } from "lucide-react";
+import { File, Mail, ChevronDown, ExternalLink, Briefcase, FileText } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/tooltip";
 import { usePreloader } from "../preloader";
 import { BlurIn, BoxReveal } from "../reveal-animations";
-import { SiGithub } from "react-icons/si";
+import { SiGithub, SiGitlab } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { config } from "@/data/config";
 import { motion, AnimatePresence } from "framer-motion";
@@ -30,10 +30,10 @@ const TECH_STACK = [
 ];
 
 const STATS = [
-  { value: "3", label: "Internships" },
-  { value: "600+", label: "GitHub Contributions" },
-  { value: "40+", label: "GitLab Issues" },
-  { value: "2", label: "Research Papers" },
+  { value: "3", label: "Internships", icon: <Briefcase size={16} className="text-blue-400" /> },
+  { value: "600+", label: "GitHub Contributions", icon: <SiGithub size={16} className="text-slate-200" /> },
+  { value: "40+", label: "GitLab Issues", icon: <SiGitlab size={16} className="text-orange-500" /> },
+  { value: "2", label: "Research Papers", icon: <FileText size={16} className="text-emerald-400" /> },
 ];
 
 function TypingRole() {
@@ -100,9 +100,9 @@ const HeroSection = () => {
             <>
               {/* Current Role Badge */}
               <BlurIn delay={0.5}>
-                <div className="mb-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-medium">
+                <div className="mb-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-white text-xs font-medium tracking-wide">
                   <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-                  Full Stack Developer Intern @ MyClickBook
+                  <span>Full Stack Developer Intern <span className="text-blue-400 font-semibold">@ MyClickBook</span></span>
                 </div>
               </BlurIn>
 
@@ -138,19 +138,7 @@ const HeroSection = () => {
                 </p>
               </BlurIn>
 
-              {/* Tech Stack Pills */}
-              <BlurIn delay={1.5}>
-                <div className="flex flex-wrap gap-2 mb-6 ml-0.5 max-w-sm">
-                  {TECH_STACK.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2.5 py-1 text-xs rounded-full bg-white/5 border border-white/10 text-slate-300 dark:text-zinc-300 backdrop-blur-sm"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </BlurIn>
+
 
               {/* CTA Buttons */}
               <div className="flex flex-col gap-3 ml-0.5 w-full max-w-xs">
@@ -219,11 +207,14 @@ const HeroSection = () => {
 
               {/* Stats Row */}
               <BlurIn delay={2.3}>
-                <div className="flex gap-6 mt-8 ml-0.5 border-t border-white/10 pt-6">
+                <div className="flex flex-wrap gap-6 mt-8 ml-0.5 border-t border-white/10 pt-6">
                   {STATS.map((stat) => (
                     <div key={stat.label} className="flex flex-col">
-                      <span className="text-2xl font-black text-white leading-none">{stat.value}</span>
-                      <span className="text-xs text-slate-400 mt-0.5 leading-tight">{stat.label}</span>
+                      <div className="flex items-center gap-2 mb-1">
+                        {stat.icon}
+                        <span className="text-2xl font-black text-white leading-none">{stat.value}</span>
+                      </div>
+                      <span className="text-xs text-slate-400 leading-tight">{stat.label}</span>
                     </div>
                   ))}
                 </div>
