@@ -50,7 +50,7 @@ const BeyondCodingSection = () => {
       : ART_ITEMS.filter((item) => item.category === activeCategory);
 
   return (
-    <section id="beyond-coding" className="min-h-screen max-w-7xl mx-auto pt-20 px-4 md:px-0">
+    <section id="beyond-coding" className="relative z-10 min-h-screen max-w-7xl mx-auto pt-20 px-4 md:px-0">
       {/* Heading */}
       <h2
         className="
@@ -90,6 +90,48 @@ const BeyondCodingSection = () => {
         <div className="flex flex-col items-center justify-center py-24 text-slate-400 gap-4">
           <PencilLine size={48} className="opacity-30" />
           <p className="text-sm">No artwork here yet — check back soon!</p>
+        </div>
+      ) : activeCategory === "all" ? (
+        <div className="relative w-full overflow-hidden py-4 -mx-4 px-4 md:mx-0 md:px-0 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <motion.div
+            className="flex gap-4 w-max"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{
+              duration: filtered.length * 15, // Speed depends on number of items
+              ease: "linear",
+              repeat: Infinity,
+            }}
+          >
+            {/* Duplicate array to ensure enough items for seamless loop */}
+            {[...filtered, ...filtered, ...filtered, ...filtered].map((item, index) => (
+              <div
+                key={`${item.id}-${index}`}
+                className="group relative w-64 md:w-80 aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-white/30 transition-all duration-300 shrink-0"
+                onClick={() => setLightbox(item)}
+              >
+                <Image
+                  src={item.src}
+                  alt={item.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-2">
+                  <ZoomIn size={28} className="text-white" />
+                  <p className="text-white font-semibold text-sm text-center px-2">{item.title}</p>
+                </div>
+                {/* Category Badge */}
+                <span className="absolute top-3 left-3 flex items-center gap-1 px-2 py-1 rounded-full bg-black/60 backdrop-blur-sm text-white text-xs border border-white/10">
+                  {item.category === "sketches" ? (
+                    <PencilLine size={10} />
+                  ) : (
+                    <Palette size={10} />
+                  )}
+                  {item.category === "sketches" ? "Sketch" : "Painting"}
+                </span>
+              </div>
+            ))}
+          </motion.div>
         </div>
       ) : (
         <motion.div
