@@ -232,12 +232,14 @@ const Modall = ({ project, index }: { project: Project; index: number }) => {
           <button className="px-5 py-2.5 bg-zinc-200 hover:bg-zinc-300 text-zinc-900 dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:text-white rounded-xl text-sm font-semibold transition-colors">
             Cancel
           </button>
-          <Link href={project.live} target="_blank">
-            <button className="flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-sm font-semibold shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5">
-              <ExternalLink size={16} />
-              Visit Live
-            </button>
-          </Link>
+          {project.live && (
+            <Link href={project.live} target="_blank">
+              <button className="flex items-center gap-2 px-5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white rounded-xl text-sm font-semibold shadow-lg shadow-blue-500/20 transition-all hover:-translate-y-0.5">
+                <ExternalLink size={16} />
+                Visit Live
+              </button>
+            </Link>
+          )}
         </ModalFooter>
       </ModalBody>
     </Modal>

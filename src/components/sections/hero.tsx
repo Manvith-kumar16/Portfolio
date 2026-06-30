@@ -143,7 +143,7 @@ const HeroSection = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col gap-3 ml-0.5 w-full max-w-xs">
                 <div className="flex gap-3">
-                  <BoxReveal delay={1.8} width="auto">
+                  <BoxReveal delay={1.8} width="fit-content">
                     <Link href="/resume.pdf" target="_blank">
                       <Button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white transition-all duration-200 hover:shadow-[0_0_16px_rgba(59,130,246,0.5)]">
                         <File size={16} />
@@ -151,7 +151,7 @@ const HeroSection = () => {
                       </Button>
                     </Link>
                   </BoxReveal>
-                  <BoxReveal delay={1.9} width="auto">
+                  <BoxReveal delay={1.9} width="fit-content">
                     <Link href="#projects">
                       <Button variant="outline" className="flex items-center gap-2 border-white/20 hover:border-white/40 text-white hover:text-white transition-all">
                         <ExternalLink size={16} />
@@ -159,7 +159,7 @@ const HeroSection = () => {
                       </Button>
                     </Link>
                   </BoxReveal>
-                  <BoxReveal delay={2.0} width="auto">
+                  <BoxReveal delay={2.0} width="fit-content">
                     <Link href="#contact">
                       <Button variant="outline" className="border-white/20 hover:border-white/40 text-white hover:text-white transition-all">
                         <Mail size={16} />
@@ -170,7 +170,7 @@ const HeroSection = () => {
 
                 {/* Social Icons */}
                 <div className="flex gap-3 mt-1">
-                  <BoxReveal delay={2.1} width="auto">
+                  <BoxReveal delay={2.1} width="fit-content">
                     <Tooltip delayDuration={200}>
                       <TooltipTrigger asChild>
                         <Link href={config.social.github} target="_blank">
@@ -186,7 +186,7 @@ const HeroSection = () => {
                       <TooltipContent side="bottom"><p>GitHub</p></TooltipContent>
                     </Tooltip>
                   </BoxReveal>
-                  <BoxReveal delay={2.2} width="auto">
+                  <BoxReveal delay={2.2} width="fit-content">
                     <Tooltip delayDuration={200}>
                       <TooltipTrigger asChild>
                         <Link href={config.social.linkedin} target="_blank">
