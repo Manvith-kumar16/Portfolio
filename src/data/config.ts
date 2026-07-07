@@ -38,10 +38,10 @@ const config = {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-  linkedin: "https://www.linkedin.com/in/manvith-kumar16/",
-  instagram: "https://www.linkedin.com/in/manvith-kumar16/",
-  github: "https://github.com/manvith-kumar16/",
-},
+    linkedin: "https://www.linkedin.com/in/manvith-kumar16/",
+    instagram: "https://www.instagram.com/manvith__kumar_/",
+    github: "https://github.com/manvith-kumar16/",
+  },
 
 };
 export { config };

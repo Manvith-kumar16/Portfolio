@@ -144,7 +144,7 @@ const HeroSection = () => {
               <div className="flex flex-col gap-3 ml-0.5 w-full max-w-xs">
                 <div className="flex gap-3">
                   <BoxReveal delay={1.8} width="fit-content">
-                    <Link href="/resume.pdf" target="_blank">
+                    <Link href="/Manvith_Resume.pdf" target="_blank">
                       <Button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white transition-all duration-200 hover:shadow-[0_0_16px_rgba(59,130,246,0.5)]">
                         <File size={16} />
                         Resume
