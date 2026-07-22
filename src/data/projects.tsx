@@ -797,251 +797,248 @@ const projects: Project[] = [
   // id: "smartjobtracker",
   //  id: "savinderpurisportfolio",
   // DevPilot AI
-{
-  id: "devpilot-ai",
-  category: "AI & Software Engineering",
-  title: "DevPilot AI – Autonomous AI Software Engineering Platform",
-  src: "/assets/projects-screenshots/devpilot-ai/1.png",
-  screenshots: [
-    "1.png",
-    "2.png",
-    "3.png",
-    "4.png",
-    "5.png",
-    "6.png",
-    "7.png",
-    "8.png",
-  ],
-
-  live: "", // Add deployment URL
-  github: "https://github.com/Manvith-kumar16/CodeForge-AI.git",
-
-  skills: {
-    frontend: [
-      PROJECT_SKILLS.react,
-      PROJECT_SKILLS.next,
-      PROJECT_SKILLS.ts,
-      PROJECT_SKILLS.tailwind,
+  {
+    id: "devpilot-ai",
+    category: "AI & Software Engineering",
+    title: "DevPilot AI – Autonomous AI Software Engineering Platform",
+    src: "/assets/projects-screenshots/devpilot-ai/1.png",
+    screenshots: [
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
     ],
-    backend: [
-      PROJECT_SKILLS.python,
-      PROJECT_SKILLS.fastapi,
-      PROJECT_SKILLS.postgres,
-      PROJECT_SKILLS.redis,
-      PROJECT_SKILLS.docker,
-    ],
+
+    live: "https://github.com/Manvith-kumar16/CodeForge-AI.git",
+    github: "https://github.com/Manvith-kumar16/CodeForge-AI.git",
+
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.next,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.python,
+        PROJECT_SKILLS.fastapi,
+        PROJECT_SKILLS.postgres,
+        PROJECT_SKILLS.redis,
+        PROJECT_SKILLS.docker,
+      ],
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            <strong>DevPilot AI</strong> is an enterprise-grade autonomous software
+            engineering platform that transforms the traditional pull request review
+            process through AI-powered code analysis, security scanning, automated
+            bug detection, intelligent fix generation, and CI/CD validation.
+            <br /><br />
+            Built using FastAPI, LangGraph, PostgreSQL, Redis, Docker, and modern
+            Large Language Models, DevPilot AI orchestrates a collaborative
+            multi-agent architecture capable of reviewing pull requests, identifying
+            security vulnerabilities, detecting performance bottlenecks, analyzing
+            technical debt, generating unit tests, and proposing production-ready
+            code fixes with minimal developer intervention.
+            <br /><br />
+            The platform integrates seamlessly with GitHub to automatically analyze
+            repositories, synchronize pull requests, post inline review comments,
+            calculate repository health metrics, generate AI-assisted code patches,
+            and validate changes inside secure containerized sandbox environments
+            before developers merge their code.
+            <br /><br />
+            Designed as a next-generation AI Software Engineering Assistant,
+            DevPilot AI combines static analysis tools, autonomous AI agents,
+            security scanners, developer analytics, and scalable backend services
+            to accelerate code quality, improve security, reduce manual review
+            effort, and modernize the entire Software Development Life Cycle.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/devpilot-ai/1.png`,
+              `${BASE_PATH}/devpilot-ai/2.png`,
+              `${BASE_PATH}/devpilot-ai/3.png`,
+              `${BASE_PATH}/devpilot-ai/4.png`,
+              `${BASE_PATH}/devpilot-ai/5.png`,
+              `${BASE_PATH}/devpilot-ai/6.png`,
+              `${BASE_PATH}/devpilot-ai/7.png`,
+              `${BASE_PATH}/devpilot-ai/8.png`,
+            ]}
+          />
+        </div>
+      );
+    },
   },
-
-  get content() {
-    return (
-      <div>
-        <TypographyP className="font-mono">
-          <strong>DevPilot AI</strong> is an enterprise-grade autonomous software
-          engineering platform that transforms the traditional pull request review
-          process through AI-powered code analysis, security scanning, automated
-          bug detection, intelligent fix generation, and CI/CD validation.
-          <br /><br />
-          Built using FastAPI, LangGraph, PostgreSQL, Redis, Docker, and modern
-          Large Language Models, DevPilot AI orchestrates a collaborative
-          multi-agent architecture capable of reviewing pull requests, identifying
-          security vulnerabilities, detecting performance bottlenecks, analyzing
-          technical debt, generating unit tests, and proposing production-ready
-          code fixes with minimal developer intervention.
-          <br /><br />
-          The platform integrates seamlessly with GitHub to automatically analyze
-          repositories, synchronize pull requests, post inline review comments,
-          calculate repository health metrics, generate AI-assisted code patches,
-          and validate changes inside secure containerized sandbox environments
-          before developers merge their code.
-          <br /><br />
-          Designed as a next-generation AI Software Engineering Assistant,
-          DevPilot AI combines static analysis tools, autonomous AI agents,
-          security scanners, developer analytics, and scalable backend services
-          to accelerate code quality, improve security, reduce manual review
-          effort, and modernize the entire Software Development Life Cycle.
-        </TypographyP>
-
-        <ProjectsLinks live={this.live} repo={this.github} />
-
-        <SlideShow
-          images={[
-            `${BASE_PATH}/devpilot-ai/1.png`,
-            `${BASE_PATH}/devpilot-ai/2.png`,
-            `${BASE_PATH}/devpilot-ai/3.png`,
-            `${BASE_PATH}/devpilot-ai/4.png`,
-            `${BASE_PATH}/devpilot-ai/5.png`,
-            `${BASE_PATH}/devpilot-ai/6.png`,
-            `${BASE_PATH}/devpilot-ai/7.png`,
-            `${BASE_PATH}/devpilot-ai/8.png`,
-          ]}
-        />
-      </div>
-    );
-  },
-},
   // RetailMind AI
-{
-  id: "retailmind-ai",
-  category: "Enterprise AI",
-  title: "RetailMind AI – AI-Powered Retail & Supply Chain Platform",
-  src: "/assets/projects-screenshots/retailmind-ai/1.png",
-  screenshots: [
-    "1.png",
-    "2.png",
-    "3.png",
-    "4.png",
-    "5.png",
-    "6.png",
-    "7.png",
-    "8.png",
-  ],
-
-  live: "", // Add deployment URL
-  github: "https://github.com/Manvith-kumar16/RetailMind-AI.git",
-
-  skills: {
-    frontend: [
-      PROJECT_SKILLS.react,
-      PROJECT_SKILLS.ts,
-      PROJECT_SKILLS.vite,
-      PROJECT_SKILLS.tailwind,
+  {
+    id: "retailmind-ai",
+    category: "Enterprise AI",
+    title: "RetailMind AI – AI-Powered Retail & Supply Chain Platform",
+    src: "/assets/projects-screenshots/retailmind-ai/1.png",
+    screenshots: [
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
     ],
-    backend: [
-      PROJECT_SKILLS.dotnet,
-      PROJECT_SKILLS.fastapi,
-      PROJECT_SKILLS.postgres,
-      PROJECT_SKILLS.redis,
-      PROJECT_SKILLS.docker,
-    ],
+
+    live: "http://13.232.48.137/",
+    github: "https://github.com/Manvith-kumar16/RetailMind-AI.git",
+
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.vite,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.dotnet,
+        PROJECT_SKILLS.fastapi,
+        PROJECT_SKILLS.postgres,
+        PROJECT_SKILLS.redis,
+        PROJECT_SKILLS.docker,
+      ],
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            <strong>RetailMind AI</strong> is an enterprise-grade retail and
+            supply chain optimization platform that combines a modern React
+            dashboard, a scalable .NET 8 Clean Architecture backend, and a
+            FastAPI-powered machine learning microservice to deliver intelligent
+            inventory management, predictive analytics, and real-time operational
+            insights.
+            <br /><br />
+            The platform integrates AI-driven demand forecasting using Random
+            Forest regression and delivery time prediction using Gradient
+            Boosting, enabling retailers to optimize inventory replenishment,
+            forecast sales trends, and improve logistics planning through
+            production-ready machine learning pipelines.
+            <br /><br />
+            Built with enterprise scalability in mind, RetailMind AI implements
+            ASP.NET Core Identity, JWT authentication, Redis distributed caching,
+            PostgreSQL, Docker Compose, and an Nginx API Gateway to provide secure,
+            high-performance microservice communication with comprehensive role-
+            based access control and monitoring.
+            <br /><br />
+            Designed for modern retail enterprises, the platform offers inventory
+            management, order processing, workforce administration, analytics
+            dashboards, AI-powered forecasting, supply chain optimization, and
+            containerized deployment using a cloud-ready microservices
+            architecture.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/retailmind-ai/1.png`,
+              `${BASE_PATH}/retailmind-ai/2.png`,
+              `${BASE_PATH}/retailmind-ai/3.png`,
+              `${BASE_PATH}/retailmind-ai/4.png`,
+              `${BASE_PATH}/retailmind-ai/5.png`,
+            ]}
+          />
+        </div>
+      );
+    },
   },
-
-  get content() {
-    return (
-      <div>
-        <TypographyP className="font-mono">
-          <strong>RetailMind AI</strong> is an enterprise-grade retail and
-          supply chain optimization platform that combines a modern React
-          dashboard, a scalable .NET 8 Clean Architecture backend, and a
-          FastAPI-powered machine learning microservice to deliver intelligent
-          inventory management, predictive analytics, and real-time operational
-          insights.
-          <br /><br />
-          The platform integrates AI-driven demand forecasting using Random
-          Forest regression and delivery time prediction using Gradient
-          Boosting, enabling retailers to optimize inventory replenishment,
-          forecast sales trends, and improve logistics planning through
-          production-ready machine learning pipelines.
-          <br /><br />
-          Built with enterprise scalability in mind, RetailMind AI implements
-          ASP.NET Core Identity, JWT authentication, Redis distributed caching,
-          PostgreSQL, Docker Compose, and an Nginx API Gateway to provide secure,
-          high-performance microservice communication with comprehensive role-
-          based access control and monitoring.
-          <br /><br />
-          Designed for modern retail enterprises, the platform offers inventory
-          management, order processing, workforce administration, analytics
-          dashboards, AI-powered forecasting, supply chain optimization, and
-          containerized deployment using a cloud-ready microservices
-          architecture.
-        </TypographyP>
-
-        <ProjectsLinks live={this.live} repo={this.github} />
-
-        <SlideShow
-          images={[
-            `${BASE_PATH}/retailmind-ai/1.png`,
-            `${BASE_PATH}/retailmind-ai/2.png`,
-            `${BASE_PATH}/retailmind-ai/3.png`,
-            `${BASE_PATH}/retailmind-ai/4.png`,
-            `${BASE_PATH}/retailmind-ai/5.png`,
-            `${BASE_PATH}/retailmind-ai/6.png`,
-            `${BASE_PATH}/retailmind-ai/7.png`,
-            `${BASE_PATH}/retailmind-ai/8.png`,
-          ]}
-        />
-      </div>
-    );
-  },
-},
   // FedCare AI
-{
-  id: "fedcare-ai",
-  category: "AI & Healthcare",
-  title: "FedCare AI – Privacy-First Federated Learning Platform",
-  src: "/assets/projects-screenshots/fedcare-ai/1.png",
-  screenshots: [
-    "1.png",
-    "2.png",
-    "3.png",
-    "4.png",
-    "5.png",
-    "6.png",
-    "7.png",
-    "8.png",
-  ],
-
-  live: "", // Add deployment URL
-  github: "https://github.com/Manvith-kumar16/FedCare-AI.git",
-
-  skills: {
-    frontend: [
-      PROJECT_SKILLS.react,
-      PROJECT_SKILLS.ts,
-      PROJECT_SKILLS.vite,
-      PROJECT_SKILLS.tailwind,
+  {
+    id: "fedcare-ai",
+    category: "AI & Healthcare",
+    title: "FedCare AI – Privacy-First Federated Learning Platform",
+    src: "/assets/projects-screenshots/fedcare-ai/1.png",
+    screenshots: [
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
     ],
-    backend: [
-      PROJECT_SKILLS.python,
-      PROJECT_SKILLS.fastapi,
-      PROJECT_SKILLS.postgres,
-      PROJECT_SKILLS.docker,
-    ],
+
+    live: "https://github.com/Manvith-kumar16/FedCare-AI.git",
+    github: "https://github.com/Manvith-kumar16/FedCare-AI.git",
+
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.vite,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.python,
+        PROJECT_SKILLS.fastapi,
+        PROJECT_SKILLS.postgres,
+        PROJECT_SKILLS.docker,
+      ],
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            <strong>FedCare AI</strong> is a production-grade Federated Learning
+            platform that enables multiple hospitals to collaboratively train AI
+            models without sharing sensitive patient records, ensuring privacy and
+            regulatory compliance.
+            <br /><br />
+            Built with a modern React frontend and FastAPI backend, the platform
+            orchestrates distributed XGBoost training using the Flower framework,
+            FedAvg aggregation, PostgreSQL, and asynchronous APIs while providing
+            secure role-based access for hospitals and administrators.
+            <br /><br />
+            The platform features real-time federated training visualization,
+            explainable AI using SHAP, patient prediction dashboards, dataset
+            management, hospital onboarding, and interactive analytics through a
+            premium glassmorphism interface.
+            <br /><br />
+            Designed for enterprise healthcare environments, FedCare AI
+            incorporates privacy-first architecture, JWT authentication,
+            role-based access control, secure model storage, and hospital data
+            isolation, ensuring that no raw patient data ever leaves individual
+            institutions while enabling collaborative AI development.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/fedcare-ai/1.png`,
+              `${BASE_PATH}/fedcare-ai/2.png`,
+              `${BASE_PATH}/fedcare-ai/3.png`,
+              `${BASE_PATH}/fedcare-ai/4.png`,
+              `${BASE_PATH}/fedcare-ai/5.png`,
+              `${BASE_PATH}/fedcare-ai/6.png`,
+              `${BASE_PATH}/fedcare-ai/7.png`,
+              `${BASE_PATH}/fedcare-ai/8.png`,
+            ]}
+          />
+        </div>
+      );
+    },
   },
-
-  get content() {
-    return (
-      <div>
-        <TypographyP className="font-mono">
-          <strong>FedCare AI</strong> is a production-grade Federated Learning
-          platform that enables multiple hospitals to collaboratively train AI
-          models without sharing sensitive patient records, ensuring privacy and
-          regulatory compliance.
-          <br /><br />
-          Built with a modern React frontend and FastAPI backend, the platform
-          orchestrates distributed XGBoost training using the Flower framework,
-          FedAvg aggregation, PostgreSQL, and asynchronous APIs while providing
-          secure role-based access for hospitals and administrators.
-          <br /><br />
-          The platform features real-time federated training visualization,
-          explainable AI using SHAP, patient prediction dashboards, dataset
-          management, hospital onboarding, and interactive analytics through a
-          premium glassmorphism interface.
-          <br /><br />
-          Designed for enterprise healthcare environments, FedCare AI
-          incorporates privacy-first architecture, JWT authentication,
-          role-based access control, secure model storage, and hospital data
-          isolation, ensuring that no raw patient data ever leaves individual
-          institutions while enabling collaborative AI development.
-        </TypographyP>
-
-        <ProjectsLinks live={this.live} repo={this.github} />
-
-        <SlideShow
-          images={[
-            `${BASE_PATH}/fedcare-ai/1.png`,
-            `${BASE_PATH}/fedcare-ai/2.png`,
-            `${BASE_PATH}/fedcare-ai/3.png`,
-            `${BASE_PATH}/fedcare-ai/4.png`,
-            `${BASE_PATH}/fedcare-ai/5.png`,
-            `${BASE_PATH}/fedcare-ai/6.png`,
-            `${BASE_PATH}/fedcare-ai/7.png`,
-            `${BASE_PATH}/fedcare-ai/8.png`,
-          ]}
-        />
-      </div>
-    );
-  },
-},
   // MLCode
   {
     id: "mlcode",
@@ -1237,86 +1234,86 @@ const projects: Project[] = [
     },
   },
   // DataVex
-{
-  id: "datavex",
-  category: "AI & Enterprise SaaS",
-  title: "DataVex – Multi-Agent AI Intelligence & Lead Analysis Platform",
-  src: "/assets/projects-screenshots/datavex/1.png",
-  screenshots: [
-    "1.png",
-    "2.png",
-    "3.png",
-    "4.png",
-    "5.png",
-    "6.png",
-    "7.png",
-    "8.png",
-  ],
-
-  live: "", // Add deployment URL
-  github: "", // Add GitHub repository URL
-
-  skills: {
-    frontend: [
-      PROJECT_SKILLS.react,
-      PROJECT_SKILLS.ts,
-      PROJECT_SKILLS.vite,
-      PROJECT_SKILLS.tailwind,
+  {
+    id: "datavex",
+    category: "AI & Enterprise SaaS",
+    title: "DataVex – Multi-Agent AI Intelligence & Lead Analysis Platform",
+    src: "/assets/projects-screenshots/datavex/1.png",
+    screenshots: [
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
     ],
-    backend: [
-      PROJECT_SKILLS.node,
-      PROJECT_SKILLS.express,
-    ],
+
+    live: "", // Add deployment URL
+    github: "", // Add GitHub repository URL
+
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.vite,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.express,
+      ],
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            <strong>DataVex</strong> is an enterprise-grade AI intelligence platform
+            that transforms raw company and domain data into actionable business
+            insights using a collaborative multi-agent AI architecture. Built for
+            modern sales and business intelligence teams, it automates lead
+            qualification, market research, technical analysis, and strategic
+            decision-making.
+            <br /><br />
+            The platform features a scalable React + TypeScript frontend with a
+            secure Node.js backend that isolates AI orchestration and API keys.
+            Through a distributed multi-agent workflow, specialized AI agents
+            perform real-time web research, analyze hiring trends, evaluate
+            technical capabilities, assess funding signals, and generate
+            evidence-backed recommendations.
+            <br /><br />
+            DataVex incorporates enterprise-grade security practices including
+            server-side API key protection, rate limiting, execution audit trails,
+            evidence attribution, and dynamic enterprise detection to prevent
+            redundant outreach to organizations with mature internal engineering
+            teams.
+            <br /><br />
+            Designed as a production-ready SaaS platform, DataVex delivers
+            intelligent lead scoring, transparent AI reasoning, service
+            recommendations, and high-confidence Pursue, Nurture, or Skip
+            decisions through an advanced multi-agent orchestration engine.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/datavex/1.png`,
+              `${BASE_PATH}/datavex/2.png`,
+              `${BASE_PATH}/datavex/3.png`,
+              `${BASE_PATH}/datavex/4.png`,
+              `${BASE_PATH}/datavex/5.png`,
+              `${BASE_PATH}/datavex/6.png`,
+              `${BASE_PATH}/datavex/7.png`,
+              `${BASE_PATH}/datavex/8.png`,
+            ]}
+          />
+        </div>
+      );
+    },
   },
-
-  get content() {
-    return (
-      <div>
-        <TypographyP className="font-mono">
-          <strong>DataVex</strong> is an enterprise-grade AI intelligence platform
-          that transforms raw company and domain data into actionable business
-          insights using a collaborative multi-agent AI architecture. Built for
-          modern sales and business intelligence teams, it automates lead
-          qualification, market research, technical analysis, and strategic
-          decision-making.
-          <br /><br />
-          The platform features a scalable React + TypeScript frontend with a
-          secure Node.js backend that isolates AI orchestration and API keys.
-          Through a distributed multi-agent workflow, specialized AI agents
-          perform real-time web research, analyze hiring trends, evaluate
-          technical capabilities, assess funding signals, and generate
-          evidence-backed recommendations.
-          <br /><br />
-          DataVex incorporates enterprise-grade security practices including
-          server-side API key protection, rate limiting, execution audit trails,
-          evidence attribution, and dynamic enterprise detection to prevent
-          redundant outreach to organizations with mature internal engineering
-          teams.
-          <br /><br />
-          Designed as a production-ready SaaS platform, DataVex delivers
-          intelligent lead scoring, transparent AI reasoning, service
-          recommendations, and high-confidence Pursue, Nurture, or Skip
-          decisions through an advanced multi-agent orchestration engine.
-        </TypographyP>
-
-        <ProjectsLinks live={this.live} repo={this.github} />
-
-        <SlideShow
-          images={[
-            `${BASE_PATH}/datavex/1.png`,
-            `${BASE_PATH}/datavex/2.png`,
-            `${BASE_PATH}/datavex/3.png`,
-            `${BASE_PATH}/datavex/4.png`,
-            `${BASE_PATH}/datavex/5.png`,
-            `${BASE_PATH}/datavex/6.png`,
-            `${BASE_PATH}/datavex/7.png`,
-            `${BASE_PATH}/datavex/8.png`,
-          ]}
-        />
-      </div>
-    );
-  },
-},
   { // 03. Flappy Bird Game
     id: "flappybird",
     category: "Game Development",

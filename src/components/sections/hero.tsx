@@ -31,8 +31,8 @@ const TECH_STACK = [
 
 const STATS = [
   { value: "3", label: "Internships", icon: <Briefcase size={16} className="text-blue-400" /> },
-  { value: "600+", label: "GitHub Contributions", icon: <SiGithub size={16} className="text-slate-200" /> },
-  { value: "40+", label: "GitLab Issues", icon: <SiGitlab size={16} className="text-orange-500" /> },
+  { value: "650+", label: "GitHub Contributions", icon: <SiGithub size={16} className="text-slate-200" /> },
+  { value: "70+", label: "GitLab Issues", icon: <SiGitlab size={16} className="text-orange-500" /> },
   { value: "2", label: "Research Papers", icon: <FileText size={16} className="text-emerald-400" /> },
 ];
 
