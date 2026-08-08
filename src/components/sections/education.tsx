@@ -2,26 +2,27 @@
 
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { GraduationCap, BookOpen, School, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
+import Image from "next/image";
 
 const EDUCATION = [
   {
     degree: "B.E. Computer Science (AI & ML)",
     institution: "Sahyadri College of Engineering & Management",
     period: "2023 – 2027",
-    icon: <GraduationCap className="w-7 h-7 text-blue-400" />,
+    icon: <Image src="/assets/Education/sahyadri.png" alt="Sahyadri" width={48} height={48} className="w-10 h-10 object-contain" />,
   },
   {
     degree: "PUC - Science Stream",
     institution: "St Aloysius PU College, Mangalore",
     period: "2021 – 2023",
-    icon: <BookOpen className="w-7 h-7 text-purple-400" />,
+    icon: <Image src="/assets/Education/Aloysius.png" alt="Aloysius" width={48} height={48} className="w-10 h-10 object-contain" />,
   },
   {
     degree: "SSLC",
     institution: "Sarojini Madhusudan Kushe Educational Institution, Mangalore",
     period: "2021",
-    icon: <School className="w-7 h-7 text-emerald-400" />,
+    icon: <Image src="/assets/Education/madhusudan.png" alt="Madhusudan" width={48} height={48} className="w-10 h-10 object-contain" />,
   }
 ];
 

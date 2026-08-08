@@ -10,9 +10,9 @@ const ResearchSection = () => {
       link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6992593&__cf_chl_f_tk=SAXhhbkV0YcSAhCbGPWCClpaQt38hCStSxC7Vm3wjNg-1782759609-1.0.1.1-m3JFdRir3o8fO0UUcw5nsYA9v1lDH49bcSjBvU6tBaA",
       type: "SSRN Preprint",
       year: "2026",
-      status: "Published",
+      status: "Under Review",
       statusColor: "emerald",
-      authors: "Manvith Kumar Ullal, et al.",
+      authors: "Manvith Kumar Ullal, Shivasubrahmanya KC, Preran Rai, G. Nisha Bangera, Vidya Kolur, Duddela Sai Prashanth, Rakshith BhandaryRakshith Bhandary, Priya Kamath",
       overview:
         "Designed a novel multimodal deep learning framework for automated arecanut quality classification by combining RGB surface images with X-ray imaging, enabling simultaneous analysis of external appearance and internal structural defects. The study systematically evaluated four multimodal learning paradigms and demonstrated the effectiveness of feature-level fusion for agricultural quality assessment.",
       highlights: [
@@ -40,8 +40,8 @@ const ResearchSection = () => {
         "An End-to-End Deep Learning Framework for Handwritten Tulu Lipi Recognition and AI-Assisted Script Learning",
       type: "Research Paper",
       year: "2026",
-      status: "Manuscript",
-      statusColor: "amber",
+      status: "Under Review",
+      statusColor: "emerald",
       authors: "Manvith Kumar Ullal, Arshith, Preran Rai, Thushar",
       overview:
         "Proposed an AI-powered educational platform for preserving the Tulu language through handwritten character recognition and interactive script learning. The system combines a CNN-based recognition model with a Flask inference API and a React-based learning platform to provide real-time handwriting evaluation and learner feedback.",
@@ -64,6 +64,41 @@ const ResearchSection = () => {
         "CNN",
       ],
       publication: "Research Manuscript (2026)",
+    },
+    {
+      number: "03",
+      title:
+        "An Explainable Federated Learning Framework for Privacy-Preserving Pneumonia Detection Using Chest X-ray Images",
+      type: "IEEE Research Paper",
+      year: "2026",
+      status: "Under Review",
+      statusColor: "emerald",
+      authors:
+        "Arshith, Manvith Kumar Ullal, Preran Rai, Thushar, Rajeshwari R Shettigar",
+      overview:
+        "Proposed an explainable federated learning framework for privacy-preserving pneumonia detection from chest X-ray images. The framework combines an SE-enhanced DenseNet121 model with FedAvg and FedProx across three simulated hospital clients, while Grad-CAM provides visual explanations of model predictions and cross-dataset evaluation measures generalization.",
+      highlights: [
+        "Developed an SE-enhanced DenseNet121 model for privacy-preserving pneumonia detection using federated learning.",
+        "Compared FedAvg and FedProx across three simulated hospital clients using the RSNA Pneumonia Detection Challenge dataset.",
+        "Achieved 82.49% accuracy and 88.52% AUC with FedAvg, while FedProx achieved 82.16% accuracy and 88.63% AUC with higher recall of 77.27%.",
+        "Evaluated cross-domain generalization on an independent Labeled Chest X-ray Images dataset, where FedProx achieved 70.51% accuracy, 54.62% recall, and 90.35% AUC.",
+        "Applied Grad-CAM to provide visual explanations and verify whether the models focused on clinically relevant pulmonary regions.",
+      ],
+      tags: [
+        "Federated Learning",
+        "Explainable AI",
+        "PyTorch",
+        "DenseNet121",
+        "Squeeze-and-Excitation",
+        "FedAvg",
+        "FedProx",
+        "Grad-CAM",
+        "Medical Imaging",
+        "Deep Learning",
+        "Computer Vision",
+        "Healthcare AI",
+      ],
+      publication: "IEEE Research Paper (2026)",
     },
   ];
 
@@ -106,11 +141,10 @@ const ResearchSection = () => {
 
               <div className="flex flex-row md:flex-col items-center md:items-end gap-2 shrink-0">
                 <span
-                  className={`px-3 py-1 text-xs font-semibold rounded-full ${
-                    paper.statusColor === "emerald"
-                      ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400"
-                      : "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-400"
-                  }`}
+                  className={`px-3 py-1 text-xs font-semibold rounded-full ${paper.statusColor === "emerald"
+                    ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400"
+                    : "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-400"
+                    }`}
                 >
                   {paper.status}
                 </span>
@@ -158,11 +192,11 @@ const ResearchSection = () => {
                   </span>
                 ))}
               </div>
-              
+
               {paper.link && (
-                <a 
-                  href={paper.link} 
-                  target="_blank" 
+                <a
+                  href={paper.link}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 px-4 py-2 text-xs font-bold bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 hover:text-blue-300 border border-blue-500/20 rounded-xl transition-colors shrink-0"
                 >
