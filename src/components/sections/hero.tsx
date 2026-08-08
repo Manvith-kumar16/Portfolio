@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { File, Mail, ChevronDown, ExternalLink, Briefcase, FileText } from "lucide-react";
@@ -224,8 +225,32 @@ const HeroSection = () => {
             </>
           )}
         </div>
-        <div className="grid col-span-1" />
+        <div className="col-span-1 hidden md:block relative z-[2]" />
       </div>
+
+      {!isLoading && (
+        <div className="absolute bottom-0 right-0 w-1/2 h-full hidden md:flex justify-center items-end pointer-events-none z-[2]">
+          <BlurIn delay={1.5} className="pointer-events-auto w-full h-full flex justify-center items-end relative">
+            {/* Circular Background Effect */}
+            <div className="absolute top-[42%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] lg:w-[600px] lg:h-[600px] rounded-full bg-gradient-to-tr from-slate-800/60 to-transparent border border-slate-700/50 -z-10 shadow-[0_0_100px_rgba(59,130,246,0.1)]" />
+
+            <Image
+              src="/Me1.svg"
+              alt="Manvith Kumar"
+              width={1000}
+              height={1800}
+              className="object-contain object-bottom max-h-[90dvh] w-auto select-none pointer-events-auto"
+              style={{
+                maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%), linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
+                maskComposite: 'intersect',
+                WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%), linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)',
+                WebkitMaskComposite: 'source-in'
+              }}
+              priority
+            />
+          </BlurIn>
+        </div>
+      )}
 
       {/* Scroll Indicator */}
       <AnimatePresence>
@@ -235,7 +260,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 2.5 }}
-            className="absolute bottom-8 left-[50%] translate-x-[-50%] flex flex-col items-center gap-1 cursor-pointer"
+            className="absolute bottom-8 left-[50%] md:left-[35%] translate-x-[-50%] flex flex-col items-center gap-1 cursor-pointer z-[10]"
             onClick={() => document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" })}
           >
             <span className="text-xs text-slate-400 tracking-widest uppercase font-light">
