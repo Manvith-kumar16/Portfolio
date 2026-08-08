@@ -796,6 +796,87 @@ const projects: Project[] = [
   // id: "smartparkingassitant",
   // id: "smartjobtracker",
   //  id: "savinderpurisportfolio",
+  // RetailMind AI
+  {
+    id: "retailmind-ai",
+    category: "Enterprise AI",
+    title: "RetailMind AI – AI-Powered Retail & Supply Chain Platform",
+    src: "/assets/projects-screenshots/retailmind-ai/1.png",
+    screenshots: [
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png",
+      "6.png",
+      "7.png",
+      "8.png",
+    ],
+
+    live: "http://13.232.48.137/",
+    github: "https://github.com/Manvith-kumar16/RetailMind-AI.git",
+
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.vite,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.dotnet,
+        PROJECT_SKILLS.fastapi,
+        PROJECT_SKILLS.postgres,
+        PROJECT_SKILLS.redis,
+        PROJECT_SKILLS.docker,
+      ],
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            <strong>RetailMind AI</strong> is an enterprise-grade retail and
+            supply chain optimization platform that combines a modern React
+            dashboard, a scalable .NET 8 Clean Architecture backend, and a
+            FastAPI-powered machine learning microservice to deliver intelligent
+            inventory management, predictive analytics, and real-time operational
+            insights.
+            <br /><br />
+            The platform integrates AI-driven demand forecasting using Random
+            Forest regression and delivery time prediction using Gradient
+            Boosting, enabling retailers to optimize inventory replenishment,
+            forecast sales trends, and improve logistics planning through
+            production-ready machine learning pipelines.
+            <br /><br />
+            Built with enterprise scalability in mind, RetailMind AI implements
+            ASP.NET Core Identity, JWT authentication, Redis distributed caching,
+            PostgreSQL, Docker Compose, and an Nginx API Gateway to provide secure,
+            high-performance microservice communication with comprehensive role-
+            based access control and monitoring.
+            <br /><br />
+            Designed for modern retail enterprises, the platform offers inventory
+            management, order processing, workforce administration, analytics
+            dashboards, AI-powered forecasting, supply chain optimization, and
+            containerized deployment using a cloud-ready microservices
+            architecture.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/retailmind-ai/1.png`,
+              `${BASE_PATH}/retailmind-ai/2.png`,
+              `${BASE_PATH}/retailmind-ai/3.png`,
+              `${BASE_PATH}/retailmind-ai/4.png`,
+              `${BASE_PATH}/retailmind-ai/5.png`,
+            ]}
+          />
+        </div>
+      );
+    },
+  },
   // DevPilot AI
   {
     id: "devpilot-ai",
@@ -873,87 +954,6 @@ const projects: Project[] = [
               `${BASE_PATH}/devpilot-ai/6.png`,
               `${BASE_PATH}/devpilot-ai/7.png`,
               `${BASE_PATH}/devpilot-ai/8.png`,
-            ]}
-          />
-        </div>
-      );
-    },
-  },
-  // RetailMind AI
-  {
-    id: "retailmind-ai",
-    category: "Enterprise AI",
-    title: "RetailMind AI – AI-Powered Retail & Supply Chain Platform",
-    src: "/assets/projects-screenshots/retailmind-ai/1.png",
-    screenshots: [
-      "1.png",
-      "2.png",
-      "3.png",
-      "4.png",
-      "5.png",
-      "6.png",
-      "7.png",
-      "8.png",
-    ],
-
-    live: "http://13.232.48.137/",
-    github: "https://github.com/Manvith-kumar16/RetailMind-AI.git",
-
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.vite,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [
-        PROJECT_SKILLS.dotnet,
-        PROJECT_SKILLS.fastapi,
-        PROJECT_SKILLS.postgres,
-        PROJECT_SKILLS.redis,
-        PROJECT_SKILLS.docker,
-      ],
-    },
-
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono">
-            <strong>RetailMind AI</strong> is an enterprise-grade retail and
-            supply chain optimization platform that combines a modern React
-            dashboard, a scalable .NET 8 Clean Architecture backend, and a
-            FastAPI-powered machine learning microservice to deliver intelligent
-            inventory management, predictive analytics, and real-time operational
-            insights.
-            <br /><br />
-            The platform integrates AI-driven demand forecasting using Random
-            Forest regression and delivery time prediction using Gradient
-            Boosting, enabling retailers to optimize inventory replenishment,
-            forecast sales trends, and improve logistics planning through
-            production-ready machine learning pipelines.
-            <br /><br />
-            Built with enterprise scalability in mind, RetailMind AI implements
-            ASP.NET Core Identity, JWT authentication, Redis distributed caching,
-            PostgreSQL, Docker Compose, and an Nginx API Gateway to provide secure,
-            high-performance microservice communication with comprehensive role-
-            based access control and monitoring.
-            <br /><br />
-            Designed for modern retail enterprises, the platform offers inventory
-            management, order processing, workforce administration, analytics
-            dashboards, AI-powered forecasting, supply chain optimization, and
-            containerized deployment using a cloud-ready microservices
-            architecture.
-          </TypographyP>
-
-          <ProjectsLinks live={this.live} repo={this.github} />
-
-          <SlideShow
-            images={[
-              `${BASE_PATH}/retailmind-ai/1.png`,
-              `${BASE_PATH}/retailmind-ai/2.png`,
-              `${BASE_PATH}/retailmind-ai/3.png`,
-              `${BASE_PATH}/retailmind-ai/4.png`,
-              `${BASE_PATH}/retailmind-ai/5.png`,
             ]}
           />
         </div>

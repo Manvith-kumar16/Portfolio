@@ -17,6 +17,8 @@ import { config } from "@/data/config";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ROLES = [
+  "Software Engineer",
+  "System Engineer",
   "Full Stack Developer",
   "AI & ML Engineer",
   "React Native Developer",
@@ -31,9 +33,9 @@ const TECH_STACK = [
 
 const STATS = [
   { value: "3", label: "Internships", icon: <Briefcase size={16} className="text-blue-400" /> },
-  { value: "650+", label: "GitHub Contributions", icon: <SiGithub size={16} className="text-slate-200" /> },
+  { value: "700+", label: "GitHub Contributions", icon: <SiGithub size={16} className="text-slate-200" /> },
   { value: "70+", label: "GitLab Issues", icon: <SiGitlab size={16} className="text-orange-500" /> },
-  { value: "2", label: "Research Papers", icon: <FileText size={16} className="text-emerald-400" /> },
+  { value: "3", label: "Research Papers", icon: <FileText size={16} className="text-emerald-400" /> },
 ];
 
 function TypingRole() {
@@ -99,12 +101,12 @@ const HeroSection = () => {
           {!isLoading && (
             <>
               {/* Current Role Badge */}
-              <BlurIn delay={0.5}>
+              {/* <BlurIn delay={0.5}>
                 <div className="mb-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-white text-xs font-medium tracking-wide">
                   <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
                   <span>Full Stack Developer Intern <span className="text-blue-400 font-semibold">@ MyClickBook</span></span>
                 </div>
-              </BlurIn>
+              </BlurIn> */}
 
               {/* Name */}
               <BlurIn delay={0.7}>
@@ -144,7 +146,7 @@ const HeroSection = () => {
               <div className="flex flex-col gap-3 ml-0.5 w-full max-w-xs">
                 <div className="flex gap-3">
                   <BoxReveal delay={1.8} width="fit-content">
-                    <Link href="/Manvith_Resume.pdf" target="_blank">
+                    <Link href="/Manvith_Kumar_Resume.pdf" target="_blank">
                       <Button className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white transition-all duration-200 hover:shadow-[0_0_16px_rgba(59,130,246,0.5)]">
                         <File size={16} />
                         Resume
