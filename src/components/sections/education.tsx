@@ -10,19 +10,19 @@ const EDUCATION = [
     degree: "B.E. Computer Science (AI & ML)",
     institution: "Sahyadri College of Engineering & Management",
     period: "2023 – 2027",
-    icon: <Image src="/assets/Education/sahyadri.png" alt="Sahyadri" width={100} height={100} className="w-full h-full object-cover" />,
+    icon: <Image src="/assets/Education/sahyadri.png" alt="Sahyadri" width={100} height={100} className="w-[75%] h-[75%] object-contain" />,
   },
   {
     degree: "PUC - Science Stream",
     institution: "St Aloysius PU College, Mangalore",
     period: "2021 – 2023",
-    icon: <Image src="/assets/Education/Aloysius.png" alt="Aloysius" width={100} height={100} className="w-full h-full object-cover" />,
+    icon: <Image src="/assets/Education/Aloysius.png" alt="Aloysius" width={100} height={100} className="w-[75%] h-[75%] object-contain" />,
   },
   {
     degree: "SSLC",
     institution: "Sarojini Madhusudan Kushe Educational Institution, Mangalore",
     period: "2021",
-    icon: <Image src="/assets/Education/madhusudan.png" alt="Madhusudan" width={100} height={100} className="w-full h-full object-cover" />,
+    icon: <Image src="/assets/Education/madhusudan.png" alt="Madhusudan" width={100} height={100} className="w-[75%] h-[75%] object-contain" />,
   }
 ];
 
@@ -57,7 +57,7 @@ const EducationSection = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
             {/* Icon Container */}
-            <div className="relative z-10 flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden bg-white/5 border border-white/10 shadow-inner group-hover:scale-110 group-hover:bg-blue-500/10 transition-all duration-500 shrink-0">
+            <div className="relative z-10 flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden bg-white border border-white/10 shadow-inner group-hover:scale-110 transition-all duration-500 shrink-0">
               {edu.icon}
             </div>
 

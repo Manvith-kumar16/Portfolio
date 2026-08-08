@@ -1250,8 +1250,8 @@ const projects: Project[] = [
       "8.png",
     ],
 
-    live: "", // Add deployment URL
-    github: "", // Add GitHub repository URL
+    live: "https://datavex-5rrbyorqo-manvith-kumars-projects.vercel.app", // Add deployment URL
+    github: "https://github.com/Manvith-kumar16/DataVex.git", // Add GitHub repository URL
 
     skills: {
       frontend: [
@@ -1320,7 +1320,7 @@ const projects: Project[] = [
     title: "Flappy Bird (Unity Game)",
     src: "/assets/projects-screenshots/flappybird/1.jpg",
     screenshots: ["1.jpg", "2.jpg", "3.jpg"],
-    live: "https://github.com/Manvith-kumar16/Flappy-Bird", // update if needed
+    live: "", // update if needed
     github: "https://github.com/Manvith-kumar16/Flappy-Bird",
 
     skills: {
@@ -1365,7 +1365,7 @@ const projects: Project[] = [
     title: "FoodWallah - Food Ordering Web Application",
     src: "/assets/projects-screenshots/food-ordering/2.png",
     screenshots: ["1.png", "2.png", "3.png", "4.png"],
-    live: "https://github.com/Manvith-kumar16/FoodWallah", // optional (or GitHub Pages)
+    live: "", // optional (or GitHub Pages)
     github: "https://github.com/Manvith-kumar16/FoodWallah",
 
     skills: {
@@ -1408,7 +1408,7 @@ const projects: Project[] = [
     title: "Mobile Brand Detector",
     src: "/assets/projects-screenshots/mobilebranddetector/1.png",
     screenshots: ["1.png"],
-    live: "https://github.com/Manvith-kumar16/Mobile-Brand-Detector", // update if needed
+    live: "", // update if needed
     github: "https://github.com/Manvith-kumar16/Mobile-Brand-Detector",
 
     skills: {
@@ -1457,7 +1457,7 @@ const projects: Project[] = [
     title: "Amazon.com Clone",
     src: "/assets/projects-screenshots/amazonclone/1.png",
     screenshots: ["1.png", "2.png", "3.png"],
-    live: "https://github.com/Manvith-kumar16/Amazon-Clone", // update if deployed
+    live: "", // update if deployed
     github: "https://github.com/Manvith-kumar16/Amazon-Clone",
 
     skills: {

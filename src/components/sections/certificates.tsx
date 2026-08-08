@@ -131,10 +131,10 @@ const CertificatesSection = () => {
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-2 rounded-xl border border-blue-500/30 bg-blue-500/5 hover:bg-blue-500/10 text-blue-400 hover:text-blue-300 font-black transition-all shadow-none"
+                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border border-blue-500/30 bg-blue-500/5 hover:bg-blue-500/10 text-blue-400 hover:text-blue-300 font-black text-sm transition-all shadow-none"
               >
                 View Certificate
-                <ExternalLink size={18} />
+                <ExternalLink size={16} />
               </a>
             </div>
           </motion.div>

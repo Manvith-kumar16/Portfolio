@@ -37,7 +37,7 @@ const ExperienceSection = () => {
 
           <div className="relative z-10">
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
-              <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight group-hover:text-blue-400 transition-colors duration-300">
+              <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight transition-colors duration-300">
                 Full Stack Developer Intern
               </h3>
               <p className="text-sm font-semibold tracking-wider uppercase text-slate-400 md:mt-0 mt-2 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
@@ -99,6 +99,151 @@ const ExperienceSection = () => {
                   <ExternalLink size={18} />
                 </Button>
               </Link>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          whileHover={{ y: -8 }}
+          transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+          className="group relative p-6 md:p-10 rounded-[2rem] bg-zinc-900/40 backdrop-blur-xl border border-white/10 hover:border-blue-500/50 transition-all duration-500 shadow-2xl hover:shadow-[0_0_50px_rgba(59,130,246,0.15)] overflow-hidden"
+        >
+          {/* Subtle Hover Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+
+          <div className="relative z-10">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
+              <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight transition-colors duration-300">
+                Gen AI & Cloud Computing Intern
+              </h3>
+              <p className="text-sm font-semibold tracking-wider uppercase text-slate-400 md:mt-0 mt-2 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
+                June 2026 – July 2026
+              </p>
+            </div>
+
+            <div className="flex items-center gap-3 mb-6">
+              <Image
+                src="/assets/Internship/IBM.png"
+                alt="IBM Logo"
+                width={24}
+                height={24}
+                className="object-contain"
+              />
+              <p className="text-lg md:text-xl font-bold text-blue-500 drop-shadow-sm">
+                IBM SkillsBuild & BharatCares
+              </p>
+            </div>
+
+            <p className="text-slate-300 mb-8 text-sm md:text-base leading-relaxed">
+              Successfully completed the AICTE IBM SkillsBuild Gen AI & Cloud Computing Internship in collaboration with IBM SkillsBuild and BharatCares.
+            </p>
+
+            <div className="mb-8">
+              <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
+                Key Contributions & Highlights:
+              </h4>
+              <ul className="list-outside list-disc space-y-3 text-sm md:text-base text-slate-300 ml-5 marker:text-blue-500">
+                <li>Gained practical knowledge of cloud computing fundamentals, cloud service and deployment models, virtualization, Docker containerization, and APIs.</li>
+                <li>Developed hands-on experience with containerized application deployment, cloud-based software development, and cloud databases.</li>
+                <li>Explored cloud security, identity and access management (IAM), database security, and cloud application deployment workflows through practical simulations.</li>
+                <li>Strengthened understanding of modern enterprise cloud technologies while enhancing problem-solving skills in real-world cloud environments.</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+              <div>
+                <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-widest text-slate-400">Tech Stack</h4>
+                <div className="flex flex-wrap gap-2.5">
+                  {["Cloud Computing", "IBM Cloud", "Docker", "APIs", "IAM", "Cloud Deployment", "Virtualization", "Database Security", "Cloud Databases", "Containerization"].map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-4 py-2 text-xs font-bold tracking-wide rounded-full bg-white/5 border border-white/10 text-slate-300 backdrop-blur-md group-hover:border-blue-500/30 group-hover:bg-blue-500/10 group-hover:text-white transition-all duration-300 shadow-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <Link href="/assets/Internship/image.png" target="_blank" className="shrink-0">
+                <Button variant="outline" className="flex items-center gap-2 border-blue-500/30 bg-blue-500/5 hover:bg-blue-500/10 text-blue-400 hover:text-blue-300 font-bold transition-all shadow-none rounded-xl">
+                  View Certificate
+                  <ExternalLink size={18} />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          whileHover={{ y: -8 }}
+          transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
+          className="group relative p-6 md:p-10 rounded-[2rem] bg-zinc-900/40 backdrop-blur-xl border border-white/10 hover:border-blue-500/50 transition-all duration-500 shadow-2xl hover:shadow-[0_0_50px_rgba(59,130,246,0.15)] overflow-hidden"
+        >
+          {/* Subtle Hover Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+
+          <div className="relative z-10">
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-3">
+              <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight transition-colors duration-300">
+                AI/ML Intern
+              </h3>
+              <p className="text-sm font-semibold tracking-wider uppercase text-slate-400 md:mt-0 mt-2 bg-white/5 px-3 py-1.5 rounded-full border border-white/10">
+                April 2026 – May 2026
+              </p>
+            </div>
+
+            <div className="flex items-center gap-3 mb-6">
+              <Image
+                src="/assets/Internship/BrandAndBrandz.png"
+                alt="BrandandBrandz Logo"
+                width={24}
+                height={24}
+                className="object-contain bg-white rounded-sm p-0.5"
+              />
+              <p className="text-lg md:text-xl font-bold text-blue-500 drop-shadow-sm">
+                BrandandBrandz
+              </p>
+            </div>
+
+            <p className="text-slate-300 mb-8 text-sm md:text-base leading-relaxed">
+              Worked on the development of an AI-powered Receptionist Automation System using n8n, Groq AI, Airtable, REST APIs, and webhook integrations.
+            </p>
+
+            <div className="mb-8">
+              <h4 className="font-semibold text-white mb-4 flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
+                Key Contributions & Highlights:
+              </h4>
+              <ul className="list-outside list-disc space-y-3 text-sm md:text-base text-slate-300 ml-5 marker:text-blue-500">
+                <li>Contributed to designing and implementing automated appointment booking workflows, including scheduling, rescheduling, cancellations, and reminder systems.</li>
+                <li>Integrated APIs and managed databases using Airtable, configured webhooks, and debugged API authentication and execution issues.</li>
+                <li>Collaborated on building conversational AI workflows, enhancing automation efficiency and user interaction handling.</li>
+                <li>Improved overall system reliability using structured development practices.</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+              <div>
+                <h4 className="font-semibold text-white mb-4 text-sm uppercase tracking-widest text-slate-400">Tech Stack</h4>
+                <div className="flex flex-wrap gap-2.5">
+                  {["n8n", "Groq AI", "Airtable", "Cal.com API", "REST APIs", "Postman", "Webhooks", "Automation Workflows", "AI Agents"].map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-4 py-2 text-xs font-bold tracking-wide rounded-full bg-white/5 border border-white/10 text-slate-300 backdrop-blur-md group-hover:border-blue-500/30 group-hover:bg-blue-500/10 group-hover:text-white transition-all duration-300 shadow-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>
