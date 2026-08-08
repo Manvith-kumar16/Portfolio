@@ -19,17 +19,33 @@ const achievements = [
     link: "https://drive.google.com/file/d/11c9zH6VHspWpIcUOVx4Q0thCT5Y7Bic8/view?usp=drive_link",
   },
   {
+    title: "Participant – Cognizant Technoverse Hackathon 2026",
+    description:
+      "Recognized for participation in the Cognizant Technoverse Hackathon 2026",
+    image: "/assets/achievements/Cognizant_Technoverse.jpg",
+    link: "/assets/achievements/participation-cert-ce44cbb9.pdf",
+  },
+  {
+    title: "Participant – VexStorm'26 Hackathon",
+    description:
+      "Participated in the VexStorm'26 Hackathon conducted by Datavex.AI at Sahyadri College of Engineering and Management",
+    image: "/assets/achievements/VexStorm26.jpg",
+    link: "/assets/achievements/Manvith Kumar Ullal_certificate.pdf",
+  },
+  {
     title: "GSSoC 2025 – Tech Contributor",
     description:
       "Recognized as a technical contributor for open-source contributions",
     image: "/assets/achievements/GSSoC.jpg",
-    link: "https://drive.google.com/file/d/1jhD-KqdJcRskb6iu9CqkoZo3II-BfEde/view?usp=drive_link //"
+    link: "https://drive.google.com/file/d/1jhD-KqdJcRskb6iu9CqkoZo3II-BfEde/view?usp=drive_link //",
+    linkText: "View Badge ↗",
   },
   {
     title: "Active Contributor to GitHub Projects",
     description:
       "Regular contributor to open-source repositories with focus on frontend, AI, and full-stack development",
     link: "https://github.com/Manvith-kumar16", // 🔗 GitHub profile
+    linkText: "View GitHub ↗",
   },
 ];
 
@@ -93,7 +109,7 @@ const AchievementsSection = () => {
                   rel="noopener noreferrer"
                   className="mt-1 text-sm text-blue-400 hover:underline w-fit"
                 >
-                  View Certificate ↗
+                  {item.linkText || "View Certificate ↗"}
                 </a>
               )}
             </div>

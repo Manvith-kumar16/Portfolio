@@ -6,6 +6,18 @@ import { Award, ExternalLink } from "lucide-react";
 
 const CERTIFICATES = [
   {
+    name: "AWS Certified Cloud Practitioner",
+    issuedBy: "AWS",
+    logo: "https://icon.horse/icon/aws.amazon.com",
+    link: "/assets/Certificate/AWS_Cloud_Practitioner_Essentials.pdf",
+  },
+  {
+    name: "Python for Data Science",
+    issuedBy: "NPTEL",
+    logo: "https://icon.horse/icon/nptel.ac.in",
+    link: "/assets/Certificate/NPTEL%20-%20Python%20for%20Data%20Science.pdf",
+  },
+  {
     name: "Introduction to Generative AI Studio",
     issuedBy: "Google Cloud",
     logo: "https://icon.horse/icon/cloud.google.com",
@@ -119,10 +131,10 @@ const CertificatesSection = () => {
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-slate-300 hover:text-white hover:bg-blue-600 hover:border-blue-500 transition-all duration-300 shadow-sm"
+                className="flex items-center gap-2 px-5 py-2 rounded-xl border border-blue-500/30 bg-blue-500/5 hover:bg-blue-500/10 text-blue-400 hover:text-blue-300 font-black transition-all shadow-none"
               >
                 View Certificate
-                <ExternalLink className="w-3.5 h-3.5" />
+                <ExternalLink size={18} />
               </a>
             </div>
           </motion.div>
