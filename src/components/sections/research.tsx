@@ -12,7 +12,7 @@ const ResearchSection = () => {
       year: "2026",
       status: "Under Review",
       statusColor: "emerald",
-      authors: "Manvith Kumar Ullal, Shivasubrahmanya KC, Preran Rai, G. Nisha Bangera, Vidya Kolur, Duddela Sai Prashanth, Rakshith BhandaryRakshith Bhandary, Priya Kamath",
+      authors: "Manvith Kumar Ullal, Shivasubrahmanya KC, Preran Rai, G. Nisha Bangera, Vidya Kolur, Duddela Sai Prashanth, Rakshith Bhandary, Priya Kamath",
       overview:
         "Designed a novel multimodal deep learning framework for automated arecanut quality classification by combining RGB surface images with X-ray imaging, enabling simultaneous analysis of external appearance and internal structural defects. The study systematically evaluated four multimodal learning paradigms and demonstrated the effectiveness of feature-level fusion for agricultural quality assessment.",
       highlights: [
@@ -42,7 +42,7 @@ const ResearchSection = () => {
       year: "2026",
       status: "Under Review",
       statusColor: "emerald",
-      authors: "Manvith Kumar Ullal, Arshith, Preran Rai, Thushar",
+      authors: "Manvith Kumar Ullal, Arshith, Preran Rai, Thushar, Rajeshwari R Shettigar",
       overview:
         "Proposed an AI-powered educational platform for preserving the Tulu language through handwritten character recognition and interactive script learning. The system combines a CNN-based recognition model with a Flask inference API and a React-based learning platform to provide real-time handwriting evaluation and learner feedback.",
       highlights: [
