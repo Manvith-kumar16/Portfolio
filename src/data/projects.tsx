@@ -315,6 +315,18 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiDotnet />,
   },
+  pytorch: {
+    title: "PyTorch",
+    bg: "black",
+    fg: "white",
+    icon: <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" />,
+  },
+  huggingface: {
+    title: "Hugging Face",
+    bg: "black",
+    fg: "white",
+    icon: <span style={{ fontSize: '12px' }}>🤗</span>,
+  },
 };
 export type Project = {
   id: string;
@@ -1246,8 +1258,6 @@ const projects: Project[] = [
       "4.png",
       "5.png",
       "6.png",
-      "7.png",
-      "8.png",
     ],
 
     live: "https://datavex-5rrbyorqo-manvith-kumars-projects.vercel.app", // Add deployment URL
@@ -1306,8 +1316,6 @@ const projects: Project[] = [
               `${BASE_PATH}/datavex/4.png`,
               `${BASE_PATH}/datavex/5.png`,
               `${BASE_PATH}/datavex/6.png`,
-              `${BASE_PATH}/datavex/7.png`,
-              `${BASE_PATH}/datavex/8.png`,
             ]}
           />
         </div>
@@ -1358,6 +1366,140 @@ const projects: Project[] = [
       );
     },
   },
+  // Smart Fashion Classifier
+  {
+    id: "smart-fashion-classifier",
+    category: "AI & Computer Vision",
+    title: "Smart Fashion Classifier – AI Fashion Article Recognition",
+    src: "/assets/projects-screenshots/smart-fashion-classifier/1.png",
+    screenshots: ["1.png", "2.png", "3.png", "4.png"],
+    live: "",
+    github: "https://github.com/Manvith-kumar16/Smart-Fashion-Classifier.git",
+
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.vite,
+      ],
+      backend: [
+        PROJECT_SKILLS.fastapi,
+        PROJECT_SKILLS.python,
+        PROJECT_SKILLS.pytorch,
+        PROJECT_SKILLS.huggingface,
+      ],
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            <strong>Smart Fashion Classifier</strong> is an AI-powered web
+            application that instantly identifies fashion items across{" "}
+            <strong>141 distinct article types</strong> using deep learning.
+            Built to solve the real-world problem of manual product
+            categorization in e-commerce, the system leverages a fine-tuned{" "}
+            <strong>SigLIP vision model</strong> from Hugging Face to deliver
+            instant, high-accuracy predictions from any product image.
+            <br /><br />
+            The application uses a{" "}
+            <strong>FastAPI backend</strong> that accepts image uploads via a
+            multipart POST request, preprocesses them using Hugging Face&apos;s
+            AutoImageProcessor, and runs inference locally with
+            AutoModelForImageClassification. Raw logits are converted to
+            probabilities via Softmax and the{" "}
+            <strong>Top-5 predictions</strong> are returned as a JSON response
+            with confidence percentages — all without sending images to any
+            external API, ensuring full privacy.
+            <br /><br />
+            The <strong>React + TypeScript frontend</strong> (powered by Vite)
+            supports drag-and-drop and clipboard paste image input, presenting
+            the results in a beautiful, responsive UI with animated confidence
+            bars. The model is based on the{" "}
+            <em>Fashion Product Images Dataset</em> from Kaggle (~44,000 records)
+            and the pretrained{" "}
+            <em>prithivMLmods/Fashion-Product-articleType</em> model from Hugging
+            Face Hub.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/smart-fashion-classifier/1.png`,
+              `${BASE_PATH}/smart-fashion-classifier/2.png`,
+              `${BASE_PATH}/smart-fashion-classifier/3.png`,
+              `${BASE_PATH}/smart-fashion-classifier/4.png`,
+            ]}
+          />
+        </div>
+      );
+    },
+  },
+  // My Portfolio
+  {
+    id: "my-portfolio",
+    category: "Portfolio",
+    title: "My Portfolio – Personal Developer Portfolio",
+    src: "/assets/projects-screenshots/portfolio-site/1.png",
+    screenshots: ["1.png", "2.png", "3.png"],
+    live: "",
+    github: "https://github.com/Manvith-kumar16/Portfolio.git",
+
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.next,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.framerMotion,
+        PROJECT_SKILLS.aceternity,
+        PROJECT_SKILLS.spline,
+      ],
+      backend: [],
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            <strong>My Portfolio</strong> is my personal developer portfolio —
+            a fully custom-built site designed to wow at first glance. Built
+            with <strong>Next.js 14</strong> and{" "}
+            <strong>TypeScript</strong>, the site features a cinematic hero
+            section with a live <strong>3D Spline</strong> model, a
+            smooth-scrolling skills keyboard, animated project cards with
+            glassmorphism effects, and section-by-section scroll animations
+            powered by <strong>Framer Motion</strong>.
+            <br /><br />
+            The design language uses a deep dark space theme with vibrant
+            particle effects, a custom animated navbar, and rich
+            micro-interactions throughout. Component library is a blend of{" "}
+            <strong>Aceternity UI</strong> and{" "}
+            <strong>Tailwind CSS</strong> — crafted to feel premium and
+            modern. Sections include Projects, Skills, Experience, Education,
+            Certificates, and Research Papers, all powered by structured
+            TypeScript data files for easy maintenance.
+            <br /><br />
+            Key stats showcased: <strong>3 internships</strong>,{" "}
+            <strong>700+ GitHub contributions</strong>,{" "}
+            <strong>70+ GitLab issues</strong>, and{" "}
+            <strong>3 research papers</strong>.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/portfolio-site/1.png`,
+              `${BASE_PATH}/portfolio-site/2.png`,
+              `${BASE_PATH}/portfolio-site/3.png`,
+            ]}
+          />
+        </div>
+      );
+    },
+  },
   {
     // 04. Food Ordering Web App
     id: "foodwallah",
@@ -1401,7 +1543,6 @@ const projects: Project[] = [
       );
     },
   },
-
   { // 05. Mobile Brand Detector project
     id: "mobile-brand-detector",
     category: "AI & Machine Learning",
@@ -1494,6 +1635,76 @@ const projects: Project[] = [
               `${BASE_PATH}/amazonclone/2.png`,
               `${BASE_PATH}/amazonclone/3.png`,
 
+            ]}
+          />
+        </div>
+      );
+    },
+  },
+  // E-Commerce Sales Intelligence Dashboard
+  {
+    id: "ecommerce-dashboard",
+    category: "Data Analytics & Visualization",
+    title: "E-Commerce Sales Intelligence Dashboard",
+    src: "/assets/projects-screenshots/ecommerce-dashboard/1.png",
+    screenshots: ["1.png", "2.png", "3.png", "4.png", "5.png"],
+    live: "",
+    github: "https://github.com/Manvith-kumar16/E-Commerce-Sales-Intelligence-Dashboard.git",
+
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.vite,
+      ],
+      backend: [
+        PROJECT_SKILLS.fastapi,
+        PROJECT_SKILLS.python,
+      ],
+    },
+
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            <strong>E-Commerce Sales Intelligence Dashboard</strong> is a
+            full-stack analytics platform that transforms raw e-commerce CSV
+            data into deep, actionable business insights. Built with a{" "}
+            <strong>React + Vite + Tailwind CSS</strong> frontend and a{" "}
+            <strong>FastAPI</strong> backend, the dashboard helps stakeholders
+            visualize performance metrics in real time with rich, interactive
+            charts.
+            <br /><br />
+            The platform ingests three datasets from a year of operations
+            (April 2018 – March 2019): order tracking &amp; geography,
+            granular line-item details (category, quantity, profit, sales), and
+            monthly sales targets by department. Key findings uncovered include
+            a <strong>₹4,31,502</strong> total sales figure against a
+            ₹4,35,900 target, a narrow <strong>5.55% profit margin</strong>{" "}
+            (₹23,955 profit), an{" "}
+            <strong>Average Order Value of ₹863</strong> across 500 unique
+            orders from 332 customers, and sales spread across{" "}
+            <strong>3 primary categories</strong>, 17 sub-categories, and{" "}
+            <strong>19 Indian states</strong>.
+            <br /><br />
+            Visualizations include a <em>Sales vs Target line chart</em>{" "}
+            (monthly trend), a <em>category split donut chart</em>{" "}
+            (Electronics / Furniture / Clothing), and a{" "}
+            <em>top-states bar chart</em> — all served through clean RESTful
+            endpoints from the FastAPI backend with interactive Swagger docs
+            at <code>/docs</code>.
+          </TypographyP>
+
+          <ProjectsLinks live={this.live} repo={this.github} />
+
+          <SlideShow
+            images={[
+              `${BASE_PATH}/ecommerce-dashboard/1.png`,
+              `${BASE_PATH}/ecommerce-dashboard/2.png`,
+              `${BASE_PATH}/ecommerce-dashboard/3.png`,
+              `${BASE_PATH}/ecommerce-dashboard/4.png`,
+              `${BASE_PATH}/ecommerce-dashboard/5.png`,
             ]}
           />
         </div>
